@@ -1,0 +1,7 @@
+<?
+if($INCLUDE_FROM_CACHE!='Y')return false;
+$datecreate = '001319727353';
+$dateexpire = '001319730953';
+$ser_content = 'a:2:{s:7:"CONTENT";s:0:"";s:4:"VARS";a:6:{i:0;a:10:{s:4:"TEXT";s:23:"Каталог книг";s:4:"LINK";s:15:"/e-store/books/";s:8:"SELECTED";b:0;s:10:"PERMISSION";s:1:"X";s:16:"ADDITIONAL_LINKS";a:0:{}s:9:"ITEM_TYPE";s:1:"D";s:10:"ITEM_INDEX";i:0;s:6:"PARAMS";a:0:{}s:11:"DEPTH_LEVEL";i:1;s:9:"IS_PARENT";b:0;}i:1;a:10:{s:4:"TEXT";s:61:"Каталог товаров из 1С:Предприятие";s:4:"LINK";s:21:"/e-store/xml_catalog/";s:8:"SELECTED";b:1;s:10:"PERMISSION";s:1:"X";s:16:"ADDITIONAL_LINKS";a:0:{}s:9:"ITEM_TYPE";s:1:"D";s:10:"ITEM_INDEX";i:1;s:6:"PARAMS";a:0:{}s:11:"DEPTH_LEVEL";i:1;s:9:"IS_PARENT";b:0;}i:2;a:10:{s:4:"TEXT";s:18:"Аффилиаты";s:4:"LINK";s:20:"/e-store/affiliates/";s:8:"SELECTED";b:0;s:10:"PERMISSION";s:1:"X";s:16:"ADDITIONAL_LINKS";a:0:{}s:9:"ITEM_TYPE";s:1:"D";s:10:"ITEM_INDEX";i:2;s:6:"PARAMS";a:0:{}s:11:"DEPTH_LEVEL";i:1;s:9:"IS_PARENT";b:0;}i:3;a:10:{s:4:"TEXT";s:29:"Платный контент";s:4:"LINK";s:14:"/e-store/paid/";s:8:"SELECTED";b:0;s:10:"PERMISSION";s:1:"X";s:16:"ADDITIONAL_LINKS";a:0:{}s:9:"ITEM_TYPE";s:1:"D";s:10:"ITEM_INDEX";i:3;s:6:"PARAMS";a:0:{}s:11:"DEPTH_LEVEL";i:1;s:9:"IS_PARENT";b:0;}s:7:"menuDir";s:9:"/e-store/";s:8:"menuType";s:4:"left";}}';
+return true;
+?>

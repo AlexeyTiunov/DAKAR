@@ -1,0 +1,85 @@
+/* auth form*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/*
+#at_frm_bitrix {
+	margin:30px auto 10px;
+}*/
+#auth table{
+
+	margin:0px auto 10px;
+	font: 8pt regular arial;
+	/*position: relative;*/
+}
+#auth a{
+	color: #edaf1f;
+}
+/*
+#auth_reg {
+	color: #edaf1f;
+}
+#auth_reg_forgot {
+	color: #edaf1f;
+}
+*/
+
+/*ul.left-menu
+{
+	list-style:none;
+	margin:0; padding:0;
+	margin-bottom:8px;
+	position: relative; /*IE bug*/
+	background: url("images/poisk_katalog_buttom_204.png") no-repeat;
+}
+
+ul.left-menu li
+{
+	padding: 10px 16px;
+	background:#F5F5F5 url(images/left_menu_bg.gif) top repeat-x;
+}
+
+ul.left-menu li a
+{
+	font-size:100%;
+	color:#BC262C;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+ul.left-menu li a:visited
+{
+	color:#BC262C;
+}
+
+ul.left-menu li a:hover
+{
+	color:#BC262C;
+}
+
+
+ul.left-menu li a.selected:link, 
+ul.left-menu li a.selected:visited, 
+ul.left-menu li a.selected:active, 
+ul.left-menu li a.selected:hover
+{
+	color:#FC8D3D;
+}
+#inputtext
+{
+    width:200px; 
+    height:30px;
+    background:url(images/InputTextBack.png) no-repeat;
+}
+#inputtext  input
+{
+    margin-top:5px;
+    border:none;
+    
+    
+}
+
+*/
+

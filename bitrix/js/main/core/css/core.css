@@ -1,0 +1,15 @@
+.bx-core-waitwindow { 
+	background-color:#FCF7D1;
+	background-image:url(/bitrix/js/main/core/images/wait.gif);
+	background-position:10px center;
+	background-repeat:no-repeat;
+	border:1px solid #E1B52D;
+	color:black;
+	font-family:Verdana,Arial,sans-serif;
+	font-size:11px;
+	padding:10px;
+	position:absolute;
+	width:170px;
+	z-index:10000;
+	text-align:center; 
+}

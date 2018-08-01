@@ -1,0 +1,34 @@
+<?
+$MESS['IBLOCK_PROP_MAP_GOOGLE'] = 'Привязка к карте Google Maps';
+$MESS['IBLOCK_PROP_MAP_GOOGLE_INSTR'] = 'Выберите точку на карте двойным щелчком мыши.';
+$MESS['IBLOCK_PROP_MAP_GOOGLE_INSTR_VALUE'] = 'Перетащите точку по карте или выберите новое положение двойным щелчком мыши.';
+$MESS['IBLOCK_PROP_MAP_GOOGLE_SEARCH'] = 'Поиск по карте: ';
+$MESS['IBLOCK_PROP_MAP_GOOGLE_NOTHING_FOUND'] = '(ничего не найдено)';
+$MESS['IBLOCK_PROP_MAP_GOOGLE_INIT_LAT'] = '55.76';
+$MESS['IBLOCK_PROP_MAP_GOOGLE_INIT_LON'] = '37.64';
+$MESS['IBLOCK_PROP_MAP_GOOGLE_GOTO_POINT'] = 'Перейти к точке';
+$MESS['IBLOCK_PROP_MAP_GOOGLE_REMOVE_POINT'] = 'Очистить значение';
+$MESS['IBLOCK_PROP_MAP_GOOGLE_REMOVE_POINT_CONFIRM'] = 'Вы точно уверены, что хотите очистить значение?';
+$MESS['IBLOCK_PROP_MAP_GOOGLE_NO_KEY_MESSAGE'] = 'Укажите ключ карты для домена #DOMAIN#. Если у вас нет такого ключа, получить его можно на <a href="http://code.google.com/intl/ru_ALL/apis/maps/signup.html" target="_blank">этой странице</a>.';
+$MESS['IBLOCK_PROP_MAP_GOOGLE_NO_KEY_BUTTON'] = 'Готово';
+$MESS['IBLOCK_PROP_MAP_GOOGLE_SAVE_KEY_BUTTON'] = 'Сохранить ключ';
+$MESS['IBLOCK_PROP_MAP_GOOGLE_NO_KEY'] = 'Ключ карты: ';
+$MESS['IBLOCK_PROP_MAP_GOOGLE_NO_KEY_OKMESSAGE'] = 'Ключ карты сохранен. Вы можете изменить его или просмотреть список сохраненных ключей  на <a href="/bitrix/admin/settings.php?lang=ru&mid=fileman&tabControl_active_tab=edit4">странице настроек модуля "Управление структурой"</a>.';
+$MESS['IBLOCK_PROP_MAP_GOOGLE_NO_KEY_ERRORMESSAGE'] = 'При сохранении ключа произошла ошибка! Попробуйте позже.';
+$MESS['IBLOCK_PROP_MAP_YANDEX'] = 'Привязка к Яndex.Карте';
+$MESS['IBLOCK_PROP_MAP_YANDEX_INIT_LAT'] = '55.76';
+$MESS['IBLOCK_PROP_MAP_YANDEX_INIT_LON'] = '37.64';
+$MESS['IBLOCK_PROP_MAP_YANDEX_NO_KEY_MESSAGE'] = 'Укажите ключ карты для домена #DOMAIN#. Если у вас нет такого ключа, получить его можно на <a href="http://api.yandex.ru/maps/form.xml" target="_blank">этой странице</a>.';
+$MESS['IBLOCK_PROP_MAP_YANDEX_NO_KEY'] = 'Ключ карты: ';
+$MESS['IBLOCK_PROP_MAP_YANDEX_NO_KEY_BUTTON'] = 'Готово';
+$MESS['IBLOCK_PROP_MAP_YANDEX_SAVE_KEY_BUTTON'] = 'Сохранить ключ';
+$MESS['IBLOCK_PROP_MAP_YANDEX_NO_KEY_OKMESSAGE'] = 'Ключ карты сохранен. Вы можете изменить его или просмотреть список сохраненных ключей  на <a href="/bitrix/admin/settings.php?lang=ru&mid=fileman&tabControl_active_tab=edit4">странице настроек модуля "Управление структурой"</a>.';
+$MESS['IBLOCK_PROP_MAP_YANDEX_INSTR'] = 'Выберите точку на карте двойным щелчком мыши.';
+$MESS['IBLOCK_PROP_MAP_YANDEX_INSTR_VALUE'] = 'Перетащите точку по карте или выберите новое положение двойным щелчком мыши.';
+$MESS['IBLOCK_PROP_MAP_YANDEX_SEARCH'] = 'Поиск по карте: ';
+$MESS['IBLOCK_PROP_MAP_YANDEX_NOTHING_FOUND'] = '(ничего не найдено)';
+$MESS['IBLOCK_PROP_MAP_YANDEX_NO_KEY_ERRORMESSAGE'] = 'При сохранении ключа произошла ошибка! Попробуйте позже.';
+$MESS['IBLOCK_PROP_MAP_YANDEX_GOTO_POINT'] = 'Перейти к точке';
+$MESS['IBLOCK_PROP_MAP_YANDEX_REMOVE_POINT'] = 'Очистить значение';
+$MESS['IBLOCK_PROP_MAP_YANDEX_REMOVE_POINT_CONFIRM'] = 'Вы точно уверены, что хотите очистить значение?';
+?>

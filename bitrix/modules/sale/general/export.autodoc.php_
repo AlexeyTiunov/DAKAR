@@ -1,0 +1,85 @@
+<?php
+require_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/php_interface/include/autodoc_globals.php");
+function GetBasketItemProperty( $basketID, $propertyCode )
+{
+   global $DB;   $res = '';
+
+   $sql = "SELECT VALUE FROM b_sale_basket_props ";
+   $sql .= " WHERE BASKET_ID='".$basketID."'";
+   $sql .= " AND CODE='".$propertyCode."'";
+
+   $rRes = $DB->Query($sql);
+   if( $arRes = $rRes->Fetch())
+     $res = $arRes["VALUE"] ;
+
+
+   return $res;
+
+}
+      //  ¬озвращает регион  дл€ текущего заказа
+function GetOrderRegion( $orderID )
+{
+   $dbBasket = CSaleBasket::GetList(
+						array("NAME" => "ASC"),
+						array("ORDER_ID" => $orderID)
+					);
+
+   if ( $arBasket = $dbBasket->Fetch() )
+     return   GetBasketItemProperty($arBasket["ID"],"RegionCode");
+   else die("Error Creating XML 1");
+}
+
+      //  ¬озвращает валюту дл€ текущего заказа
+function GetOrderCurrency( $orderID )
+{
+
+   $dbBasket = CSaleBasket::GetList(
+						array("NAME" => "ASC"),
+						array("ORDER_ID" => $orderID)
+					);
+
+   if ( $arBasket = $dbBasket->Fetch() )
+     return   $arBasket["CURRENCY"];
+   else die("Error Creating XML 2");
+}
+
+       //  ¬озвращает массив с аналогами данного товара ( Caption, BrandCode, ItemCode )
+       // »ли false - если нет аналогов
+function GetItemAnalogs($ItemCode, $Brand)
+{
+
+   global $DB;
+   $arAnalogs = Array();
+   $i = 0;
+
+
+   $brandCode = GetBrandCodeByCHR($Brand);
+
+   $sql = "SELECT B2Code, I2Code FROM b_autodoc_analogs_m ";
+   $sql .= " WHERE I1Code='".$ItemCode."'";
+   $sql .= " AND B1Code='".$brandCode."'";
+
+   $rRes = $DB->Query($sql);
+
+   while( $arRes = $rRes->Fetch())
+     {
+         $sql = "SELECT ItemCode, BrandCode, Caption FROM b_autodoc_items_m ";
+         $sql .= " WHERE ItemCode='".$arRes["I2Code"]."'";
+         $sql .= " AND BrandCode='".$arRes["B2Code"]."'";
+
+         $rRes2 = $DB->Query($sql);
+         $arRes2 = $rRes2->Fetch();
+
+         $arAnalogs[$i]["BrandCode"] = GetCHRBrandCodeByID( $arRes2["BrandCode"] );
+         $arAnalogs[$i]["ItemCode"] = $arRes2["ItemCode"];
+         $arAnalogs[$i]["Caption"] = $arRes2["Caption"];
+
+         $i++;
+     }
+
+   if($i > 0 )
+     return $arAnalogs;
+   else
+     return false;}
+
+?>

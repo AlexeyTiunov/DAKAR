@@ -1,0 +1,113 @@
+* {
+	margin: 0;
+	padding: 0;
+	border-collapse: collapse;
+}
+#search_brand {
+font-weight:  bolder;
+}
+/*                                Поиск по каталогу                               */
+#table_search table {
+color:black;
+background: #E0E0E0;
+/*background: #BEBEBE;*/
+border: 2px solid red;
+/*padding: 2px 3px 4px 3px;*/
+/*font: 12px Arial;*/
+z-index: 3;
+}
+#table_search td {
+border: 1px solid black;
+}
+#table_search th {
+border: 1px solid black;
+background:#AEAEAE;
+}
+
+#table_search_cena {
+font-weight:  bolder;
+}
+/*                                Поиск по сайту ???                               */
+#search_name {
+color: #edaf1f;
+padding: 2px 3px 10px 0px;
+font: bold 8pt Arial ;
+}
+#tableFindedItemsITG
+{
+counter-reset:section;
+}
+#tableFindedItemsITG span.counterFor:before
+{
+counter-increment:section;
+content: counter(section)". ";
+}
+#search_field {
+float: left;
+width: 139px;
+height: 17px;
+border: none !important;
+padding: 2px 3px 4px 3px;
+font: 12px Arial;
+}
+#search_button {
+float: left;
+padding: 0 0 0 10px;
+}
+/*                                Корзина                                   */
+#table_mycart table {
+color:black;
+background: #E0E0E0;
+/*background: #BEBEBE;*/
+border: 2px solid red;
+/*padding: 2px 3px 4px 3px;*/
+/*font: 12px Arial;*/
+z-index: 3;
+}
+#table_mycart td {
+border: 1px solid black;
+}
+#table_mycart th {
+border: 1px solid black;
+background:#AEAEAE;
+}
+/*                                Взаиморасчеты                                */
+#table_settlements table {
+color:black;
+background: #E0E0E0;
+padding-left:3px;
+padding-right:3px;
+/*background: #BEBEBE;*/
+border: 2px solid red;
+/*padding: 2px 3px 4px 3px;*/
+/*font: 12px Arial;*/
+z-index: 3;
+}
+#table_settlements td {
+padding-left:3px;
+padding-right:3px;
+border: 1px solid black;
+}
+#table_settlements th {
+padding-left:3px;
+padding-right:3px;
+border: 1px solid black;
+background:#AEAEAE;
+}
+/*                                Отгрузка                               */
+#table_upload table {
+color:black;
+background: #E0E0E0;
+/*background: #BEBEBE;*/
+border: 2px solid red;
+/*padding: 2px 3px 4px 3px;*/
+/*font: 12px Arial;*/
+z-index: 3;
+}
+#table_upload td {
+border: 1px solid black;
+}
+#table_upload th {
+border: 1px solid black;
+background:#AEAEAE;
+}

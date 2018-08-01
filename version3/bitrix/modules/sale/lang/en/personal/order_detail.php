@@ -1,0 +1,36 @@
+<?
+$MESS ['SALE_EDIT_RECORD'] = "Details on order N#ID#";
+$MESS ['SALE_RECORDS_LIST'] = "To the list of orders";
+$MESS ['P_ORDER_ID'] = "Order";
+$MESS ['P_ORDER_DATE'] = "Order date";
+$MESS ['P_ORDER_LANG'] = "Order language";
+$MESS ['P_ORDER_STATUS'] = "Status";
+$MESS ['P_ORDER_STATUS_DATE'] = "changed";
+$MESS ['P_ORDER_PRICE'] = "Order price";
+$MESS ['P_ORDER_UPDATE_DATE'] = "last update";
+$MESS ['P_ORDER_CANCELED'] = "Canceled";
+$MESS ['P_ORDER_DATE_CANCELED'] = "canceled";
+$MESS ['P_ORDER_PERS_TYPE'] = "Payer type";
+$MESS ['P_ORDER_USER'] = "Order preferences";
+$MESS ['P_ORDER_PAYMENT'] = "Payment and shipping";
+$MESS ['P_ORDER_PAY_SYSTEM'] = "Payment system";
+$MESS ['P_ORDER_PAYED'] = "Paid";
+$MESS ['P_ORDER_DATE_PAYED'] = "paid";
+$MESS ['P_ORDER_DELIVERY'] = "Delivery service";
+$MESS ['P_ORDER_COMMENTS'] = "Comment";
+$MESS ['P_ORDER_USER_COMMENT'] = "User comments";
+$MESS ['P_ORDER_BASKET'] = "Shopping cart";
+$MESS ['SALE_SAVE'] = "Save";
+$MESS ['SALE_APPLY'] = "Apply";
+$MESS ['SALE_RESET'] = "Cancel";
+$MESS ['P_ORDER_ALLOW_DELIVERY'] = "Delivery allowed";
+$MESS ['P_ORDER_DATE_ALLOW_DELIVERY'] = "allowed";
+$MESS ['SALE_ORDER_CODE'] = "Order ID";
+$MESS ['SALE_YES'] = "Yes";
+$MESS ['SALE_NO'] = "No";
+$MESS ['SALE_CANCEL_ORDER'] = "Cancel";
+$MESS ['SALE_REPEAT_PAY'] = "Repeat payment";
+$MESS ['SALE_CONTENT_NAME'] = "Name";
+$MESS ['SALE_CONTENT_QUANTITY'] = "Quantity";
+$MESS ['SALE_NO_ORDER_F'] = "Order not found";
+?>

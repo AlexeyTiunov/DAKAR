@@ -1,0 +1,7 @@
+<?
+if($INCLUDE_FROM_CACHE!='Y')return false;
+$datecreate = '001315027776';
+$dateexpire = '001315031376';
+$ser_content = 'a:2:{s:7:"CONTENT";s:0:"";s:4:"VARS";a:10:{i:0;a:3:{s:4:"LINK";s:19:"/autodoc/search.php";s:5:"LINKS";a:1:{i:0;s:19:"/autodoc/search.php";}s:4:"PERM";s:1:"R";}i:1;a:3:{s:4:"LINK";s:24:"/autodoc/settlements.php";s:5:"LINKS";a:1:{i:0;s:24:"/autodoc/settlements.php";}s:4:"PERM";s:1:"R";}i:2;a:3:{s:4:"LINK";s:16:"/personal/order/";s:5:"LINKS";a:1:{i:0;s:16:"/personal/order/";}s:4:"PERM";s:1:"R";}i:3;a:3:{s:4:"LINK";s:19:"/autodoc/mycart.php";s:5:"LINKS";a:1:{i:0;s:19:"/autodoc/mycart.php";}s:4:"PERM";s:1:"R";}i:4;a:3:{s:4:"LINK";s:18:"/personal/profile/";s:5:"LINKS";a:1:{i:0;s:18:"/personal/profile/";}s:4:"PERM";s:1:"R";}i:5;a:3:{s:4:"LINK";b:0;s:5:"LINKS";a:1:{i:0;b:0;}s:4:"PERM";s:1:"R";}i:6;a:3:{s:4:"LINK";s:23:"/autodoc/get_prices.php";s:5:"LINKS";a:1:{i:0;s:23:"/autodoc/get_prices.php";}s:4:"PERM";s:1:"R";}i:7;a:3:{s:4:"LINK";s:87:"/bitrix/admin/cat_exec_imp.php?ACT_FILE=csv_auotodoc&ACTION=IMPORT&PROFILE_ID=3&lang=ru";s:5:"LINKS";a:1:{i:0;s:87:"/bitrix/admin/cat_exec_imp.php?ACT_FILE=csv_auotodoc&ACTION=IMPORT&PROFILE_ID=3&lang=ru";}s:4:"PERM";s:1:"D";}i:8;a:3:{s:4:"LINK";s:16:"/autodoc/loader/";s:5:"LINKS";a:1:{i:0;s:16:"/autodoc/loader/";}s:4:"PERM";s:1:"D";}i:9;a:3:{s:4:"LINK";s:33:"/personal/order/history_positions";s:5:"LINKS";a:1:{i:0;s:33:"/personal/order/history_positions";}s:4:"PERM";s:1:"D";}}}';
+return true;
+?>

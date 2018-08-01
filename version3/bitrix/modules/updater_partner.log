@@ -1,0 +1,146 @@
+2010-07-28 13:59:06 -  - exec CUpdateClientPartner::SearchModulesEx
+2010-07-28 13:59:06 -  - exec CUpdateClientPartner::__CollectRequestData
+2010-07-28 13:59:06 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=192.168.110.98&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=1&TYPENC=D&CLIENT_PHPVER=5.2.13&dbv=5.0.51&instm=main%2C9.0.4%3Bcurrency%2C9.0.0%3Bperfmon%2C9.0.1%3Bsearch%2C9.0.3%3Bcatalog%2C8.5.1%3Bseo%2C9.0.0%3Bsitepersonal%2C9.0.0%3Bsitecorporate%2C9.0.1%3Biblock%2C9.0.2%3Bsale%2C9.0.0%3Bsubscribe%2C9.0.0%3Bsecurity%2C9.0.2%3Bcompression%2C9.0.0%3Bforum%2C9.0.2%3Bfileman%2C9.0.1&search_module_id=&search_module=&search_category=&search_type=3%2C6&search_order=ASC&search_order_by=NAME&search_page=1
+2010-07-28 13:59:06 -  - exec CUpdateClientPartner::GetHTTPPage
+2010-07-28 13:59:07 -  - TIME SearchModulesEx(request) 0.648 sec
+2010-07-28 13:59:07 -  - exec CUpdateClientPartner::ParseServerData
+2010-07-28 13:59:07 - GUL02 - [LICENSE_NOT_FOUND] Лицензия не найдена
+2010-07-30 20:03:27 -  - exec CUpdateClientPartner::SearchModulesEx
+2010-07-30 20:03:27 -  - exec CUpdateClientPartner::__CollectRequestData
+2010-07-30 20:03:27 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=192.168.110.98&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=1&TYPENC=D&CLIENT_PHPVER=5.2.13&dbv=5.0.51&instm=main%2C9.0.4%3Bcurrency%2C9.0.0%3Bperfmon%2C9.0.1%3Bsearch%2C9.0.3%3Bcatalog%2C8.5.1%3Bseo%2C9.0.0%3Bsitepersonal%2C9.0.0%3Bsitecorporate%2C9.0.1%3Biblock%2C9.0.2%3Bsale%2C9.0.0%3Bsubscribe%2C9.0.0%3Bsecurity%2C9.0.2%3Bcompression%2C9.0.0%3Bforum%2C9.0.2%3Bfileman%2C9.0.1&search_module_id=&search_module=&search_category=&search_type=&search_order=ASC&search_order_by=NAME&search_page=1
+2010-07-30 20:03:27 -  - exec CUpdateClientPartner::GetHTTPPage
+2010-07-30 20:03:29 -  - TIME SearchModulesEx(request) 1.343 sec
+2010-07-30 20:03:29 -  - exec CUpdateClientPartner::ParseServerData
+2010-07-30 20:03:29 - GUL02 - [LICENSE_NOT_FOUND] Лицензия не найдена
+2010-09-11 18:22:03 -  - exec CUpdateClientPartner::SearchModulesEx
+2010-09-11 18:22:03 -  - exec CUpdateClientPartner::__CollectRequestData
+2010-09-11 18:22:03 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=192.168.110.98&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=1&TYPENC=E&CLIENT_PHPVER=5.2.13&dbv=5.0.51&instm=main%2C9.1.2%2CN%3Bcurrency%2C9.0.0%2CN%3Bperfmon%2C9.1.0%2CN%3Bsearch%2C9.1.0%2CN%3Bcatalog%2C9.1.1%2CN%3Bseo%2C9.0.0%2CN%3Bsitepersonal%2C9.0.0%2CN%3Bsitecorporate%2C9.0.1%2CN%3Biblock%2C9.1.0%2CN%3Bsale%2C9.1.0%2CN%3Bsubscribe%2C9.1.0%2CN%3Bsecurity%2C9.1.0%2CN%3Bcompression%2C9.0.0%2CN%3Bforum%2C9.0.3%2CN%3Bfileman%2C9.1.0%2CN&search_module_id=&search_module=&search_category=&search_type=&search_order=ASC&search_order_by=NAME&search_page=1
+2010-09-11 18:22:03 -  - exec CUpdateClientPartner::GetHTTPPage
+2010-09-11 18:22:04 -  - TIME SearchModulesEx(request) 0.616 sec
+2010-09-11 18:22:04 -  - exec CUpdateClientPartner::ParseServerData
+2011-03-28 10:27:05 -  - exec CUpdateClientPartner::GetUpdatesList
+2011-03-28 10:27:05 -  - exec CUpdateClientPartner::__CollectRequestData
+2011-03-28 10:27:05 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=parts.avtodok.com.ua&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=83&TYPENC=F&CLIENT_PHPVER=5.2.17-0.dotdeb.0&dbv=5.0.51&instm=main%2C9.1.2%2CN%3Bcurrency%2C9.0.0%2CN%3Bsubscribe%2C9.1.0%2CN%3Bfileman%2C9.1.0%2CN%3Bperfmon%2C9.1.0%2CN%3Bsitecorporate%2C9.0.1%2CN%3Bsearch%2C9.1.0%2CN%3Bseo%2C9.0.0%2CN%3Biblock%2C9.1.0%2CN%3Bcatalog%2C9.1.1%2CN%3Bcompression%2C9.0.0%2CN%3Bsecurity%2C9.1.0%2CN%3Bsale%2C9.1.0%2CN%3Bsitepersonal%2C9.0.0%2CN%3Bforum%2C9.0.3%2CN&reqm=sh.mailtransport
+2011-03-28 10:27:05 -  - exec CUpdateClientPartner::GetHTTPPage
+2011-03-28 10:27:07 -  - TIME GetUpdatesList(request) 1.36 sec
+2011-03-28 10:27:07 -  - exec CUpdateClientPartner::ParseServerData
+2011-03-28 10:27:28 -  - exec CUpdateClientPartner::GetNextStepUpdates
+2011-03-28 10:27:28 -  - exec CUpdateClientPartner::__CollectRequestData
+2011-03-28 10:27:28 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=parts.avtodok.com.ua&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=83&TYPENC=F&CLIENT_PHPVER=5.2.17-0.dotdeb.0&dbv=5.0.51&instm=main%2C9.1.2%2CN%3Bcurrency%2C9.0.0%2CN%3Bsubscribe%2C9.1.0%2CN%3Bfileman%2C9.1.0%2CN%3Bperfmon%2C9.1.0%2CN%3Bsitecorporate%2C9.0.1%2CN%3Bsearch%2C9.1.0%2CN%3Bseo%2C9.0.0%2CN%3Biblock%2C9.1.0%2CN%3Bcatalog%2C9.1.1%2CN%3Bcompression%2C9.0.0%2CN%3Bsecurity%2C9.1.0%2CN%3Bsale%2C9.1.0%2CN%3Bsitepersonal%2C9.0.0%2CN%3Bforum%2C9.0.3%2CN&reqm=sh.mailtransport&lim=Y
+2011-03-28 10:27:28 -  - exec CUpdateClientPartner::GetHTTPPage
+2011-03-28 10:27:29 -  - TIME GetNextStepUpdates(request) 0.8 sec
+2011-03-28 10:27:29 -  - exec CUpdateClientPartner::UnGzipArchive
+2011-03-28 10:27:29 -  - TIME UnGzipArchive 0.006 sec
+2011-03-28 10:27:29 -  - exec CUpdateClientPartner::GetStepUpdateInfo
+2011-03-28 10:27:29 -  - exec CUpdateClientPartner::ParseServerData
+2011-03-28 10:27:29 -  - TIME UpdateStepModules 0.017 sec
+2011-03-28 10:27:29 - UPD_SUCCESS - Updated: sh.mailtransport
+2011-03-28 10:27:29 -  - exec CUpdateClientPartner::GetNextStepUpdates
+2011-03-28 10:27:29 -  - exec CUpdateClientPartner::__CollectRequestData
+2011-03-28 10:27:29 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=parts.avtodok.com.ua&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=83&TYPENC=F&CLIENT_PHPVER=5.2.17-0.dotdeb.0&dbv=5.0.51&instm=main%2C9.1.2%2CN%3Bcurrency%2C9.0.0%2CN%3Bsubscribe%2C9.1.0%2CN%3Bfileman%2C9.1.0%2CN%3Bperfmon%2C9.1.0%2CN%3Bsitecorporate%2C9.0.1%2CN%3Bsearch%2C9.1.0%2CN%3Bseo%2C9.0.0%2CN%3Bsh.mailtransport%2C1.0.0%2CN%3Biblock%2C9.1.0%2CN%3Bcatalog%2C9.1.1%2CN%3Bcompression%2C9.0.0%2CN%3Bsecurity%2C9.1.0%2CN%3Bsale%2C9.1.0%2CN%3Bsitepersonal%2C9.0.0%2CN%3Bforum%2C9.0.3%2CN&reqm=sh.mailtransport&lim=Y
+2011-03-28 10:27:29 -  - exec CUpdateClientPartner::GetHTTPPage
+2011-03-28 10:27:30 -  - TIME GetNextStepUpdates(request) 0.553 sec
+2011-03-28 10:27:30 -  - exec CUpdateClientPartner::UnGzipArchive
+2011-03-28 10:27:30 -  - TIME UnGzipArchive 0.015 sec
+2011-03-28 10:27:30 -  - exec CUpdateClientPartner::GetStepUpdateInfo
+2011-03-28 10:27:30 -  - exec CUpdateClientPartner::ParseServerData
+2011-03-28 10:27:30 -  - TIME UpdateStepModules 0.016 sec
+2011-03-28 10:27:30 - UPD_SUCCESS - Updated: sh.mailtransport (1.1.0)<br>* Реализована проверка на наличие библиотеки PEAR::Net_SMTP, необходимой для работы модуля (раньше из-за отсутствия мог валиться весь сайт). 
+2011-03-28 10:27:30 -  - exec CUpdateClientPartner::GetNextStepUpdates
+2011-03-28 10:27:30 -  - exec CUpdateClientPartner::__CollectRequestData
+2011-03-28 10:27:30 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=parts.avtodok.com.ua&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=83&TYPENC=F&CLIENT_PHPVER=5.2.17-0.dotdeb.0&dbv=5.0.51&instm=main%2C9.1.2%2CN%3Bcurrency%2C9.0.0%2CN%3Bsubscribe%2C9.1.0%2CN%3Bfileman%2C9.1.0%2CN%3Bperfmon%2C9.1.0%2CN%3Bsitecorporate%2C9.0.1%2CN%3Bsearch%2C9.1.0%2CN%3Bseo%2C9.0.0%2CN%3Bsh.mailtransport%2C1.1.0%2CN%3Biblock%2C9.1.0%2CN%3Bcatalog%2C9.1.1%2CN%3Bcompression%2C9.0.0%2CN%3Bsecurity%2C9.1.0%2CN%3Bsale%2C9.1.0%2CN%3Bsitepersonal%2C9.0.0%2CN%3Bforum%2C9.0.3%2CN&reqm=sh.mailtransport&lim=Y
+2011-03-28 10:27:30 -  - exec CUpdateClientPartner::GetHTTPPage
+2011-03-28 10:27:30 -  - TIME GetNextStepUpdates(request) 0.409 sec
+2011-03-28 10:27:30 -  - exec CUpdateClientPartner::UnGzipArchive
+2011-03-28 10:27:30 -  - TIME UnGzipArchive 0.001 sec
+2011-03-28 10:27:30 -  - exec CUpdateClientPartner::GetStepUpdateInfo
+2011-03-28 10:27:30 -  - exec CUpdateClientPartner::ParseServerData
+2011-03-28 10:27:30 - STEP - Finish - NOUPDATES
+2011-06-16 10:25:13 -  - exec CUpdateClientPartner::GetUpdatesList
+2011-06-16 10:25:13 -  - exec CUpdateClientPartner::__CollectRequestData
+2011-06-16 10:25:13 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=parts.avtodok.com.ua&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=235&TYPENC=F&CLIENT_PHPVER=5.2.17-0.dotdeb.0&dbv=5.0.51&instm=main%2C9.1.2%2CN%3Bcurrency%2C9.0.0%2CN%3Bsubscribe%2C9.1.0%2CN%3Bfileman%2C9.1.0%2CN%3Bperfmon%2C9.1.0%2CN%3Bsitecorporate%2C9.0.1%2CN%3Bsearch%2C9.1.0%2CN%3Bseo%2C9.0.0%2CN%3Bsh.mailtransport%2C1.1.0%2CN%3Biblock%2C9.1.0%2CN%3Bcatalog%2C9.1.1%2CN%3Bcompression%2C9.0.0%2CN%3Bsecurity%2C9.1.0%2CN%3Bsale%2C9.1.0%2CN%3Bsitepersonal%2C9.0.0%2CN%3Bforum%2C9.0.3%2CN&reqm=sh.mailtransport
+2011-06-16 10:25:13 -  - exec CUpdateClientPartner::GetHTTPPage
+2011-06-16 10:25:14 -  - TIME GetUpdatesList(request) 1.021 sec
+2011-06-16 10:25:14 -  - exec CUpdateClientPartner::ParseServerData
+2011-08-25 15:45:42 -  - exec CUpdateClientPartner::SearchModulesEx
+2011-08-25 15:45:42 -  - exec CUpdateClientPartner::__CollectRequestData
+2011-08-25 15:45:42 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=parts.avtodok.com.ua&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=388&TYPENC=F&CLIENT_PHPVER=5.2.17-0.dotdeb.0&dbv=5.0.51&instm=main%2C9.1.2%2CN%3Bcurrency%2C9.0.0%2CN%3Bsubscribe%2C9.1.0%2CN%3Bfileman%2C9.1.0%2CN%3Bperfmon%2C9.1.0%2CN%3Bsitecorporate%2C9.0.1%2CN%3Bsearch%2C9.1.0%2CN%3Bseo%2C9.0.0%2CN%3Bsh.mailtransport%2C1.1.0%2CN%3Biblock%2C9.1.0%2CN%3Bcatalog%2C9.1.1%2CN%3Bcompression%2C9.0.0%2CN%3Bsecurity%2C9.1.0%2CN%3Bsale%2C9.1.0%2CN%3Bsitepersonal%2C9.0.0%2CN%3Bforum%2C9.0.3%2CN&search_module_id=&search_module=&search_category=&search_type=&search_order=ASC&search_order_by=NAME&search_page=1
+2011-08-25 15:45:42 -  - exec CUpdateClientPartner::GetHTTPPage
+2011-08-25 15:45:42 -  - TIME SearchModulesEx(request) 0.662 sec
+2011-08-25 15:45:42 -  - exec CUpdateClientPartner::ParseServerData
+2011-08-25 15:45:42 - GUL02 - [MP_LICENSE_VIOLATION] В вашу лицензию не входит модуль Почтальон (sh.mailtransport). Вы должны удалить этот модуль.
+2011-08-25 15:45:57 -  - exec CUpdateClientPartner::SearchModulesEx
+2011-08-25 15:45:57 -  - exec CUpdateClientPartner::__CollectRequestData
+2011-08-25 15:45:57 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=parts.avtodok.com.ua&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=388&TYPENC=F&CLIENT_PHPVER=5.2.17-0.dotdeb.0&dbv=5.0.51&instm=main%2C9.1.2%2CN%3Bcurrency%2C9.0.0%2CN%3Bsubscribe%2C9.1.0%2CN%3Bfileman%2C9.1.0%2CN%3Bperfmon%2C9.1.0%2CN%3Bsitecorporate%2C9.0.1%2CN%3Bsearch%2C9.1.0%2CN%3Bseo%2C9.0.0%2CN%3Bsh.mailtransport%2C1.1.0%2CN%3Biblock%2C9.1.0%2CN%3Bcatalog%2C9.1.1%2CN%3Bcompression%2C9.0.0%2CN%3Bsecurity%2C9.1.0%2CN%3Bsale%2C9.1.0%2CN%3Bsitepersonal%2C9.0.0%2CN%3Bforum%2C9.0.3%2CN&search_module_id=&search_module=&search_category=&search_type=&search_order=ASC&search_order_by=NAME&search_page=1
+2011-08-25 15:45:57 -  - exec CUpdateClientPartner::GetHTTPPage
+2011-08-25 15:45:58 -  - TIME SearchModulesEx(request) 0.751 sec
+2011-08-25 15:45:58 -  - exec CUpdateClientPartner::ParseServerData
+2011-08-25 15:45:58 - GUL02 - [MP_LICENSE_VIOLATION] В вашу лицензию не входит модуль Почтальон (sh.mailtransport). Вы должны удалить этот модуль.
+2011-08-25 15:46:08 -  - exec CUpdateClientPartner::GetUpdatesList
+2011-08-25 15:46:08 -  - exec CUpdateClientPartner::__CollectRequestData
+2011-08-25 15:46:08 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=parts.avtodok.com.ua&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=388&TYPENC=F&CLIENT_PHPVER=5.2.17-0.dotdeb.0&dbv=5.0.51&instm=main%2C9.1.2%2CN%3Bcurrency%2C9.0.0%2CN%3Bsubscribe%2C9.1.0%2CN%3Bfileman%2C9.1.0%2CN%3Bperfmon%2C9.1.0%2CN%3Bsitecorporate%2C9.0.1%2CN%3Bsearch%2C9.1.0%2CN%3Bseo%2C9.0.0%2CN%3Bsh.mailtransport%2C1.1.0%2CN%3Biblock%2C9.1.0%2CN%3Bcatalog%2C9.1.1%2CN%3Bcompression%2C9.0.0%2CN%3Bsecurity%2C9.1.0%2CN%3Bsale%2C9.1.0%2CN%3Bsitepersonal%2C9.0.0%2CN%3Bforum%2C9.0.3%2CN&reqm=sh.mailtransport
+2011-08-25 15:46:08 -  - exec CUpdateClientPartner::GetHTTPPage
+2011-08-25 15:46:08 -  - TIME GetUpdatesList(request) 0.462 sec
+2011-08-25 15:46:08 -  - exec CUpdateClientPartner::ParseServerData
+2011-08-25 15:46:22 -  - exec CUpdateClientPartner::SearchModulesEx
+2011-08-25 15:46:22 -  - exec CUpdateClientPartner::__CollectRequestData
+2011-08-25 15:46:22 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=parts.avtodok.com.ua&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=388&TYPENC=F&CLIENT_PHPVER=5.2.17-0.dotdeb.0&dbv=5.0.51&instm=main%2C9.1.2%2CN%3Bcurrency%2C9.0.0%2CN%3Bsubscribe%2C9.1.0%2CN%3Bfileman%2C9.1.0%2CN%3Bperfmon%2C9.1.0%2CN%3Bsitecorporate%2C9.0.1%2CN%3Bsearch%2C9.1.0%2CN%3Bseo%2C9.0.0%2CN%3Bsh.mailtransport%2C1.1.0%2CN%3Biblock%2C9.1.0%2CN%3Bcatalog%2C9.1.1%2CN%3Bcompression%2C9.0.0%2CN%3Bsecurity%2C9.1.0%2CN%3Bsale%2C9.1.0%2CN%3Bsitepersonal%2C9.0.0%2CN%3Bforum%2C9.0.3%2CN&search_module_id=&search_module=&search_category=&search_type=&search_order=ASC&search_order_by=NAME&search_page=1
+2011-08-25 15:46:22 -  - exec CUpdateClientPartner::GetHTTPPage
+2011-08-25 15:46:22 -  - TIME SearchModulesEx(request) 0.447 sec
+2011-08-25 15:46:22 -  - exec CUpdateClientPartner::ParseServerData
+2011-08-25 15:46:22 - GUL02 - [MP_LICENSE_VIOLATION] В вашу лицензию не входит модуль Почтальон (sh.mailtransport). Вы должны удалить этот модуль.
+2011-08-26 10:33:36 -  - exec CUpdateClientPartner::SearchModulesEx
+2011-08-26 10:33:36 -  - exec CUpdateClientPartner::__CollectRequestData
+2011-08-26 10:33:36 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=parts.avtodok.com.ua&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=388&TYPENC=F&CLIENT_PHPVER=5.2.17-0.dotdeb.0&dbv=5.0.51&instm=main%2C9.1.2%2CN%3Bcurrency%2C9.0.0%2CN%3Bsubscribe%2C9.1.0%2CN%3Bfileman%2C9.1.0%2CN%3Bperfmon%2C9.1.0%2CN%3Bsitecorporate%2C9.0.1%2CN%3Bsearch%2C9.1.0%2CN%3Bseo%2C9.0.0%2CN%3Bsh.mailtransport%2C1.1.0%2CN%3Biblock%2C9.1.0%2CN%3Bcatalog%2C9.1.1%2CN%3Bcompression%2C9.0.0%2CN%3Bsecurity%2C9.1.0%2CN%3Bsale%2C9.1.0%2CN%3Bsitepersonal%2C9.0.0%2CN%3Bforum%2C9.0.3%2CN&search_module_id=&search_module=&search_category=&search_type=&search_order=ASC&search_order_by=NAME&search_page=1
+2011-08-26 10:33:36 -  - exec CUpdateClientPartner::GetHTTPPage
+2011-08-26 10:33:37 -  - TIME SearchModulesEx(request) 0.713 sec
+2011-08-26 10:33:37 -  - exec CUpdateClientPartner::ParseServerData
+2011-08-26 10:33:37 - GUL02 - [MP_LICENSE_VIOLATION] В вашу лицензию не входит модуль Почтальон (sh.mailtransport). Вы должны удалить этот модуль.
+2011-08-29 15:28:50 -  - exec CUpdateClientPartner::SearchModulesEx
+2011-08-29 15:28:50 -  - exec CUpdateClientPartner::__CollectRequestData
+2011-08-29 15:28:50 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=parts.avtodok.com.ua&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=388&TYPENC=F&CLIENT_PHPVER=5.2.17-0.dotdeb.0&dbv=5.0.51&instm=main%2C9.1.2%2CN%3Bcurrency%2C9.0.0%2CN%3Bsubscribe%2C9.1.0%2CN%3Bfileman%2C9.1.0%2CN%3Bperfmon%2C9.1.0%2CN%3Bsitecorporate%2C9.0.1%2CN%3Bsearch%2C9.1.0%2CN%3Bseo%2C9.0.0%2CN%3Bsh.mailtransport%2C1.1.0%2CN%3Biblock%2C9.1.0%2CN%3Bcatalog%2C9.1.1%2CN%3Bcompression%2C9.0.0%2CN%3Bsecurity%2C9.1.0%2CN%3Bsale%2C9.1.0%2CN%3Bsitepersonal%2C9.0.0%2CN%3Bforum%2C9.0.3%2CN&search_module_id=&search_module=&search_category=&search_type=&search_order=ASC&search_order_by=NAME&search_page=1
+2011-08-29 15:28:50 -  - exec CUpdateClientPartner::GetHTTPPage
+2011-08-29 15:28:51 -  - TIME SearchModulesEx(request) 1.096 sec
+2011-08-29 15:28:51 -  - exec CUpdateClientPartner::ParseServerData
+2011-08-29 15:28:51 - GUL02 - [MP_LICENSE_VIOLATION] В вашу лицензию не входит модуль Почтальон (sh.mailtransport). Вы должны удалить этот модуль.
+2011-08-29 15:29:09 -  - exec CUpdateClientPartner::SearchModulesEx
+2011-08-29 15:29:09 -  - exec CUpdateClientPartner::__CollectRequestData
+2011-08-29 15:29:09 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=parts.avtodok.com.ua&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=388&TYPENC=F&CLIENT_PHPVER=5.2.17-0.dotdeb.0&dbv=5.0.51&instm=main%2C9.1.2%2CN%3Bcurrency%2C9.0.0%2CN%3Bsubscribe%2C9.1.0%2CN%3Bfileman%2C9.1.0%2CN%3Bperfmon%2C9.1.0%2CN%3Bsitecorporate%2C9.0.1%2CN%3Bsearch%2C9.1.0%2CN%3Bseo%2C9.0.0%2CN%3Bsh.mailtransport%2C1.1.0%2CN%3Biblock%2C9.1.0%2CN%3Bcatalog%2C9.1.1%2CN%3Bcompression%2C9.0.0%2CN%3Bsecurity%2C9.1.0%2CN%3Bsale%2C9.1.0%2CN%3Bsitepersonal%2C9.0.0%2CN%3Bforum%2C9.0.3%2CN&search_module_id=&search_module=&search_category=&search_type=&search_order=ASC&search_order_by=NAME&search_page=1
+2011-08-29 15:29:09 -  - exec CUpdateClientPartner::GetHTTPPage
+2011-08-29 15:29:10 -  - TIME SearchModulesEx(request) 0.579 sec
+2011-08-29 15:29:10 -  - exec CUpdateClientPartner::ParseServerData
+2011-08-29 15:29:10 - GUL02 - [MP_LICENSE_VIOLATION] В вашу лицензию не входит модуль Почтальон (sh.mailtransport). Вы должны удалить этот модуль.
+2011-09-27 16:15:55 -  - exec CUpdateClientPartner::SearchModulesEx
+2011-09-27 16:15:55 -  - exec CUpdateClientPartner::__CollectRequestData
+2011-09-27 16:15:55 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=parts.avtodok.com.ua&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=467&TYPENC=F&CLIENT_PHPVER=5.2.17-0.dotdeb.0&dbv=5.0.51&instm=main%2C9.1.2%2CN%3Bcurrency%2C9.0.0%2CN%3Bsubscribe%2C9.1.0%2CN%3Bfileman%2C9.1.0%2CN%3Bperfmon%2C9.1.0%2CN%3Bsitecorporate%2C9.0.1%2CN%3Bsearch%2C9.1.0%2CN%3Bseo%2C9.0.0%2CN%3Bsh.mailtransport%2C1.1.0%2CN%3Biblock%2C9.1.0%2CN%3Bcatalog%2C9.1.1%2CN%3Bcompression%2C9.0.0%2CN%3Bsecurity%2C9.1.0%2CN%3Bsale%2C9.1.0%2CN%3Bsitepersonal%2C9.0.0%2CN%3Bforum%2C9.0.3%2CN&search_module_id=&search_module=&search_category=&search_type=&search_order=ASC&search_order_by=NAME&search_page=1
+2011-09-27 16:15:55 -  - exec CUpdateClientPartner::GetHTTPPage
+2011-09-27 16:15:56 -  - TIME SearchModulesEx(request) 0.988 sec
+2011-09-27 16:15:56 -  - exec CUpdateClientPartner::ParseServerData
+2011-09-27 16:15:56 - GUL02 - [SYS_ERROR_AB_ACTIVE] Истек период получения обновлений и коммерческой техподдержки
+2011-09-27 16:15:56 -  - exec CUpdateClientPartner::SearchModulesEx
+2011-09-27 16:15:56 -  - exec CUpdateClientPartner::__CollectRequestData
+2011-09-27 16:15:56 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=parts.avtodok.com.ua&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=467&TYPENC=F&CLIENT_PHPVER=5.2.17-0.dotdeb.0&dbv=5.0.51&instm=main%2C9.1.2%2CN%3Bcurrency%2C9.0.0%2CN%3Bsubscribe%2C9.1.0%2CN%3Bfileman%2C9.1.0%2CN%3Bperfmon%2C9.1.0%2CN%3Bsitecorporate%2C9.0.1%2CN%3Bsearch%2C9.1.0%2CN%3Bseo%2C9.0.0%2CN%3Bsh.mailtransport%2C1.1.0%2CN%3Biblock%2C9.1.0%2CN%3Bcatalog%2C9.1.1%2CN%3Bcompression%2C9.0.0%2CN%3Bsecurity%2C9.1.0%2CN%3Bsale%2C9.1.0%2CN%3Bsitepersonal%2C9.0.0%2CN%3Bforum%2C9.0.3%2CN&search_module_id=&search_module=&search_category=&search_type=&search_order=ASC&search_order_by=NAME&search_page=1
+2011-09-27 16:15:56 -  - exec CUpdateClientPartner::GetHTTPPage
+2011-09-27 16:15:57 -  - TIME SearchModulesEx(request) 0.776 sec
+2011-09-27 16:15:57 -  - exec CUpdateClientPartner::ParseServerData
+2011-09-27 16:15:57 - GUL02 - [SYS_ERROR_AB_ACTIVE] Истек период получения обновлений и коммерческой техподдержки
+2011-09-27 16:15:57 -  - exec CUpdateClientPartner::SearchModulesEx
+2011-09-27 16:15:57 -  - exec CUpdateClientPartner::__CollectRequestData
+2011-09-27 16:15:57 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=parts.avtodok.com.ua&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=467&TYPENC=F&CLIENT_PHPVER=5.2.17-0.dotdeb.0&dbv=5.0.51&instm=main%2C9.1.2%2CN%3Bcurrency%2C9.0.0%2CN%3Bsubscribe%2C9.1.0%2CN%3Bfileman%2C9.1.0%2CN%3Bperfmon%2C9.1.0%2CN%3Bsitecorporate%2C9.0.1%2CN%3Bsearch%2C9.1.0%2CN%3Bseo%2C9.0.0%2CN%3Bsh.mailtransport%2C1.1.0%2CN%3Biblock%2C9.1.0%2CN%3Bcatalog%2C9.1.1%2CN%3Bcompression%2C9.0.0%2CN%3Bsecurity%2C9.1.0%2CN%3Bsale%2C9.1.0%2CN%3Bsitepersonal%2C9.0.0%2CN%3Bforum%2C9.0.3%2CN&search_module_id=&search_module=&search_category=&search_type=&search_order=ASC&search_order_by=NAME&search_page=1
+2011-09-27 16:15:57 -  - exec CUpdateClientPartner::GetHTTPPage
+2011-09-27 16:15:58 -  - TIME SearchModulesEx(request) 0.64 sec
+2011-09-27 16:15:58 -  - exec CUpdateClientPartner::ParseServerData
+2011-09-27 16:15:58 - GUL02 - [SYS_ERROR_AB_ACTIVE] Истек период получения обновлений и коммерческой техподдержки
+2011-09-27 16:16:02 -  - exec CUpdateClientPartner::GetUpdatesList
+2011-09-27 16:16:02 -  - exec CUpdateClientPartner::__CollectRequestData
+2011-09-27 16:16:02 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=parts.avtodok.com.ua&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=467&TYPENC=F&CLIENT_PHPVER=5.2.17-0.dotdeb.0&dbv=5.0.51&instm=main%2C9.1.2%2CN%3Bcurrency%2C9.0.0%2CN%3Bsubscribe%2C9.1.0%2CN%3Bfileman%2C9.1.0%2CN%3Bperfmon%2C9.1.0%2CN%3Bsitecorporate%2C9.0.1%2CN%3Bsearch%2C9.1.0%2CN%3Bseo%2C9.0.0%2CN%3Bsh.mailtransport%2C1.1.0%2CN%3Biblock%2C9.1.0%2CN%3Bcatalog%2C9.1.1%2CN%3Bcompression%2C9.0.0%2CN%3Bsecurity%2C9.1.0%2CN%3Bsale%2C9.1.0%2CN%3Bsitepersonal%2C9.0.0%2CN%3Bforum%2C9.0.3%2CN&reqm=sh.mailtransport
+2011-09-27 16:16:02 -  - exec CUpdateClientPartner::GetHTTPPage
+2011-09-27 16:16:03 -  - TIME GetUpdatesList(request) 0.684 sec
+2011-09-27 16:16:03 -  - exec CUpdateClientPartner::ParseServerData
+2013-06-14 17:52:32 -  - exec CUpdateClientPartner::SearchModulesEx
+2013-06-14 17:52:32 -  - exec CUpdateClientPartner::__CollectRequestData
+2013-06-14 17:52:32 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=parts.avtodok.com.ua&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=1458&TYPENC=F&CLIENT_PHPVER=5.3.6-13ubuntu3.3&dbv=5.1.58&instm=main%2C9.1.2%2CN%3Bcurrency%2C9.0.0%2CN%3Bsubscribe%2C9.1.0%2CN%3Bsecurity%2C9.1.0%2CN%3Bperfmon%2C9.1.0%2CN%3Bsearch%2C9.1.0%2CN%3Bcatalog%2C9.1.1%2CN%3Biblock%2C9.1.0%2CN%3Bforum%2C9.0.3%2CN%3Bsitecorporate%2C9.0.1%2CN%3Bseo%2C9.0.0%2CN%3Bsh.mailtransport%2C1.1.0%2CN%3Bsitepersonal%2C9.0.0%2CN%3Bcompression%2C9.0.0%2CN%3Bsale%2C9.1.0%2CN%3Bfileman%2C9.1.0%2CN&search_module_id=&search_module=&search_category=&search_type=&search_order=ASC&search_order_by=NAME&search_page=1
+2013-06-14 17:52:32 -  - exec CUpdateClientPartner::GetHTTPPage
+2013-06-14 17:52:33 -  - TIME SearchModulesEx(request) 1.329 sec
+2013-06-14 17:52:33 -  - exec CUpdateClientPartner::ParseServerData
+2013-06-14 17:52:34 - GUL02 - [SYS_ERROR_AB_ACTIVE] Истек период получения обновлений и коммерческой техподдержки

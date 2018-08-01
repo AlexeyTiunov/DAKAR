@@ -1,0 +1,29 @@
+<?
+$MESS ['PAGE_NEW_FILENAME'] = "Имя папки";
+$MESS ['PAGE_NEW_WINDOW_TITLE'] = "Мастер создания нового раздела";
+$MESS ['PAGE_NEW_SUB_TITLE'] = "Создание нового раздела в папке";
+$MESS ['PAGE_NEW_FILE_EXISTS'] = "C таким именем уже существует файл.";
+$MESS ['PAGE_NEW_FOLDER_EXISTS'] = "С таким именем определена папка.";
+$MESS ['PAGE_NEW_ACCESS_DENIED'] = "У вас нет прав доступа на создание раздела.";
+$MESS ['PAGE_NEW_FOLDER_CREATE_ERROR'] = "Ошибка создания папки. Возможно недостаточно прав доступа для создания новой директории.";
+$MESS ['PAGE_NEW_FILE_NAME_EMPTY'] = "Имя папки не может быть пустым.";
+$MESS ['PAGE_NEW_FILE_NAME_VALID_SYMBOLS'] = "Недопустимые символы в имени папки.";
+$MESS ['PAGE_NEW_DEFAULT_TITLE'] = "Новый раздел";
+$MESS ['PAGE_NEW_EDIT_PAGE'] = "перейти к редактированию индексной страницы";
+$MESS ['PAGE_NEW_ADD_MENU'] = "добавить пункт меню";
+$MESS ['PAGE_NEW_MENU_NAME'] = "Имя нового пункта";
+$MESS ['PAGE_NEW_MENU_TYPE'] = "Тип меню";
+$MESS ['PAGE_NEW_MENU_POSITION'] = "Вставить перед пунктом";
+$MESS ['PAGE_NEW_PROPERTIES'] = "Свойства раздела";
+$MESS ['PAGE_NEW_NEW_ITEM'] = "-- последний пункт --";
+$MESS ['PAGE_NEW_BUTTON_PREV'] = "< Назад";
+$MESS ['PAGE_NEW_BUTTON_NEXT'] = "Далее >";
+$MESS ['PAGE_NEW_BUTTON_FINISH'] = "Готово";
+$MESS ['PAGE_NEW_BUTTON_CANCEL'] = "Отмена";
+$MESS ['PAGE_NEW_PAGE_NAME'] = "Заголовок раздела";
+$MESS ['PAGE_NEW_INHERIT_TITLE'] = "Свойство наследуется из вышележащего раздела. Для его изменения кликните по полю.";
+$MESS ['PAGE_NEW_DESCRIPTION'] = "<b>Свойства раздела</b> - определяют дополнительные характеристики раздела. Например, значения свойства &quot;Ключевые слова&quot; используются в качестве ключевых слов для всех страниц данного раздела (в мета-теге keywords).";
+$MESS ['PAGE_NEW_EDIT_IN_ADMIN'] = "Создать новый раздел в Панели управления";
+$MESS ['PAGE_NEW_FOLDER_NOT_FOUND'] = "Нельзя создать раздел в несуществующей директории.";
+$MESS["PAGE_NEW_CONTENT"]="Текст страницы...";
+?>

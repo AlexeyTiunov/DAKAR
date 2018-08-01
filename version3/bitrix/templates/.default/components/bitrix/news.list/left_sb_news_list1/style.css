@@ -1,0 +1,28 @@
+div.news-list img.preview_picture
+{
+	float:left;
+	margin:0 4px 6px 10px;
+	padding:0 0px 0px 10px;
+	color: #FFFFFF;
+}
+div.news-list a
+{
+	color: #EDAF1F;
+	margin:0 0 0 5px;
+}
+.news-date-time {
+	/*color:#486DAA;*/
+	color:#fffff;
+	/*float:left;*/
+}
+div.news-list
+{
+
+	/*margin:0 4px 6px 20px;*/
+	padding:0 5px 0px 5px;
+
+}
+#news-item a{
+     color:#6d1111;
+    font-style: italic;
+}

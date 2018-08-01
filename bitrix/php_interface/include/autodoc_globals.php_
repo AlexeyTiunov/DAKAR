@@ -1,0 +1,207 @@
+<?php
+// Объявления констант для доработок Автодок
+
+       //  Код инфоблока "Регионы"
+define("CAD_IB_REGIONS_NUM", "17");
+
+   //  Код инфоблока "Бренды"
+define("CAD_IB_BRANDS_NUM", "14");
+
+   //  Код инфоблока "Товарный каталог Автодок"
+define("CAD_IB_ITEMS_NUM", "20");
+
+   //  Код инфоблока "Цены"
+define("CAD_IB_PRICES_NUM", "18");
+
+    //  Инфоблок "Бренды"
+
+    // имя поля таблицы b_iblock_element_prop_sN, где физически храниться "Код бренда" (к примеру,ТY)
+define("CAD_TBL_IP_SHORT_BRAND_CODE", "PROPERTY_71");
+
+
+    //  Имена и описания свойств товарного каталога Автодок
+
+    //  Свойство "Код бренда"
+define("CAD_IP_BRAND_CODE", "IP_PROP120");
+define("CAD_IP_BRAND_CODE_DESC", "Бренд");
+    // имя поля таблицы b_iblock_element_prop_sN, где физически храниться "Код бренда"
+define("CAD_TBL_IP_BRAND_CODE", "PROPERTY_120");
+
+    //  Свойство "Вес"
+define("CAD_IP_WEIGHT", "IP_PROP135");
+define("CAD_IP_WEIGHT_DESC", "Вес");
+
+    //  Свойство "Код товара по каталогу бренда"
+define("CAD_IP_ITEM_CODE", "IP_PROP136");
+define("CAD_IP_ITEM_CODE_DESC", "Код товара по каталогу бренда");
+    // имя поля таблицы b_iblock_element_prop_sN, где физически храниться "Код товара по каталогу бренда"
+define("CAD_TBL_IP_ITEM_CODE", "PROPERTY_136");
+
+
+    // Колонка с ценой
+define("CAD_IP_PRICE", "CAD_IP_PRICE");
+define("CAD_IP_PRICE_DESC", "Цена");
+
+    //  Поле "Название"
+define("CAD_IE_NAME", "IE_NAME");
+define("CAD_IE_NAME_DESC", "Название");
+
+
+    //   Свойства инфоблока "Регионы"
+
+             // срок доставки
+define("CAD_IP_DELIVERY_TERM", "PROPERTY_95");
+             // исмвольный код валюты ( aka USD )
+define("CAD_IP_CURRENCY_CODE", "PROPERTY_189");
+            // короткое имя региона
+define("CAD_IP_SHORT_NAME", "PROPERTY_93");
+            // код региона
+define("CAD_IP_CODE", "PROPERTY_92");
+
+      //  Значение "выбрать все регионы" для выпадающих списков
+define ("ALL_REGIONS", '0');
+
+
+
+
+
+    //   Свойства инфоблока "Цены"
+
+    //  Имена полей
+
+define("CAD_IP_TBLPRICE_BRAND_CODE", "PROPERTY_101");
+define("CAD_IP_TBLPRICE_ITEM_CODE", "PROPERTY_102");
+define("CAD_IP_TBLPRICE_REGION_CODE", "PROPERTY_103");
+define("CAD_IP_TBLPRICE_PRICE", "PROPERTY_104");
+define("CAD_IP_TBLPRICE_PRESENCE", "PROPERTY_105");
+define("CAD_IP_TBLPRICE_EXTITEMID", "PROPERTY_188");
+
+
+
+
+function detect_line_ending($file)
+{
+    $s = file_get_contents($file);
+    if( empty($s) ) return null;
+
+    $cntRN = substr_count( $s,  "\r\n" );
+    $cntR = substr_count( $s,  "\r" );
+    $cntN = substr_count( $s,  "\n" );
+
+    if( ($cntRN >= $cntR) && ($cntRN >= $cntN) )
+       return '\r\n'; //Win
+
+    if( ($cntR >= $cntRN) && ($cntR >= $cntN) )
+       return '\r'; //Mac
+
+    return '\n'; //Unix
+}
+
+     //  Возвращает id barndcode по его буквенному представлению  ( i.e. "TY" )
+function  GetBrandCodeByCHR( $brand )
+{
+   global $DB;
+
+   $sql = "SELECT IBLOCK_ELEMENT_ID FROM  b_iblock_element_prop_s".CAD_IB_BRANDS_NUM;
+   $sql .= " WHERE ".CAD_TBL_IP_SHORT_BRAND_CODE." = '".$brand."'";
+
+
+   $rRes = $DB->Query($sql);
+
+   if ( $arRes = $rRes->Fetch() )
+     return $arRes["IBLOCK_ELEMENT_ID"];
+   else
+     return false;
+}
+
+     //  Возвращает  буквенное представление бренда  ( i.e. "TY" ) по ИД
+function  GetCHRBrandCodeByID( $ID )
+{
+   global $DB;
+
+   $sql = "SELECT ".CAD_TBL_IP_SHORT_BRAND_CODE." as CHR_BRAND_CODE FROM  b_iblock_element_prop_s".CAD_IB_BRANDS_NUM;
+   $sql .= " WHERE IBLOCK_ELEMENT_ID = '".$ID."'";
+
+
+   $rRes = $DB->Query($sql);
+
+   if ( $arRes = $rRes->Fetch() )
+     return $arRes["CHR_BRAND_CODE"];
+   else
+     return false;
+}
+      //
+function GetBrandCaptionByCHR( $brandCHR )
+{
+//  пока не сделана
+
+  return $brandCHR;
+}
+
+            //  Возвращает двумерный массив значений свойств всех регионов в виде
+            //  array[region_code][code] , где code - chrCurrencyCode, DeliveryDays, ShortName, Caption, chrCurrencyCode
+function GetAllRegionsProperties()
+{
+    global $DB;
+
+    $MY_IBLOCK_ID = CAD_IB_REGIONS_NUM;   //  Код инфоблока "Регионы"
+
+    $items = GetIBlockElementList($MY_IBLOCK_ID,false, Array("NAME"=>"ASC"));
+
+
+
+    while($arItem = $items->GetNext())
+      {
+         $elem = GetIBlockElement($arItem["ID"]);
+
+               //  заполняем массив свойств каждого региона
+         $arRegions[ $elem['PROPERTIES']['Code']['VALUE'] ]["chrCurrencyCode"] = $elem['PROPERTIES']['chrCurrencyCode']['VALUE'];
+         $arRegions[ $elem['PROPERTIES']['Code']['VALUE'] ]["DeliveryDays"] = $elem['PROPERTIES']['OrderDays']['VALUE'];
+         $arRegions[ $elem['PROPERTIES']['Code']['VALUE'] ]["ShortName"] = $elem['PROPERTIES']['ShortName']['VALUE'];
+         $arRegions[ $elem['PROPERTIES']['Code']['VALUE'] ]["Caption"] = $elem['PROPERTIES']['Caption']['VALUE'];
+         $arRegions[ $elem['PROPERTIES']['Code']['VALUE'] ]["chrCurrencyCode"] = $elem['PROPERTIES']['chrCurrencyCode']['VALUE'];
+      }
+
+    if ( isSet($arRegions) )
+      return $arRegions;
+    else
+      return false;
+}
+        // возвращает коэффициент цен для текущего юзера и заданного региона
+function GetPriceCoeff4Region( $regionID )
+{
+  global $DB;
+  global $USER;
+
+  $login = $USER->GetLogin();
+
+  $sql = "SELECT K FROM b_autodoc_clients_k ";
+  $sql .= " WHERE ClientLogin='".$login."'";
+  $sql .= " AND RegionCode='".$regionID."'";
+
+  $rRes = $DB->Query($sql);
+
+   if ( $arRes = $rRes->Fetch() )
+     return $arRes["K"];
+   else
+     return 1;
+
+}
+
+         //  Пересчитывает цену $price из валюты $inCur в $outCur
+function ExchangePriceRated( $price, $inCur, $outCur )
+{
+   $inCurrency = CCurrency::GetByID($inCur);
+   $outCurrency = CCurrency::GetByID($outCur);
+   print_r($inCurrency);
+   print_r($outCurrency);
+
+   echo "<br>". $priceInBaseCurrency = $price * $inCurrency["AMOUNT"] / $inCurrency["AMOUNT_CNT"];
+   echo "<br>".$outPrice = $priceInBaseCurrency * $outCurrency["AMOUNT_CNT"] / $outCurrency["AMOUNT"];
+
+   return  $outPrice;
+}
+
+
+
+?>

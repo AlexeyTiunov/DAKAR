@@ -1,0 +1,55 @@
+<?
+$MESS ['SALE_DELETE_ERROR'] = "Ошибка удаления заказа";
+$MESS ['SALE_SECTION_TITLE'] = "Заказы";
+$MESS ['SALE_F_FILTER'] = "Фильтр";
+$MESS ['SALE_F_ID'] = "Код заказа";
+$MESS ['SALE_F_DATE'] = "Дата заказа";
+$MESS ['SALE_F_LANG_CUR'] = "Сайт / Валюта";
+$MESS ['SALE_F_ALL'] = "(Все)";
+$MESS ['SALE_F_STATUS'] = "Статус заказа";
+$MESS ['SALE_F_DATE_STATUS'] = "Дата изменения статуса";
+$MESS ['SALE_F_PAYED'] = "Оплачен";
+$MESS ['SALE_F_PS_STATUS'] = "Платеж авторизован в ПС";
+$MESS ['SALE_F_PAY_SYSTEM'] = "Платежная система";
+$MESS ['SALE_F_CANCELED'] = "Отменен";
+$MESS ['SALE_F_BUYER'] = "Покупатель";
+$MESS ['SALE_F_SUBMIT'] = "Установить";
+$MESS ['SALE_F_DEL'] = "Сбросить";
+$MESS ['P_BUYER'] = "Покупатель";
+$MESS ['P_PLAT_SYS'] = "Плат. сист.";
+$MESS ['P_PRICE'] = "Сумма";
+$MESS ['P_STATUS'] = "Статус";
+$MESS ['P_PAYED'] = "Опл.";
+$MESS ['P_PS_STATUS'] = "Статус ПС";
+$MESS ['P_CANCELED'] = "Отм.";
+$MESS ['SALE_DETAIL'] = "Подробно";
+$MESS ['SALE_PAY_ORDER'] = "Оплатить";
+$MESS ['SALE_CONFIRM_DEL_MESSAGE'] = "Вы уверены, что хотите удалить этот заказ? Эта операция не обратима.";
+$MESS ['SALE_DELETE'] = "Удалить";
+$MESS ['SALE_PRLIST'] = "Заказы";
+$MESS ['SALE_ACTION'] = "Действия";
+$MESS ['SALE_PAY_ERROR'] = "Ошибка оплаты заказа";
+$MESS ['SALE_YES'] = "Да";
+$MESS ['SALE_NO'] = "Нет";
+$MESS ['SALE_YES_NO'] = "(Неизвестно)";
+$MESS ['SALE_ORDE_QUERIED1'] = "Проверены статусы";
+$MESS ['SALE_ORDE_QUERIED2'] = "заказов";
+$MESS ['SALE_DETAIL_DESCR'] = "Посмотреть подробную информацию о заказе";
+$MESS ['SALE_PAY_ORDER_DESCR'] = "Оплатить заказ";
+$MESS ['SALE_DELETE_DESCR'] = "Удалить заказ";
+$MESS ['SALE_PS_STATUS'] = "Статусы платежных систем";
+$MESS ['SALE_PS_LAST_DAY1'] = "За последний";
+$MESS ['SALE_PS_LAST_DAY2'] = "день";
+$MESS ['SALE_PS_UNSECCESS'] = "Обновить неуспешные статусы";
+$MESS ['SALE_PS_SECCESS'] = "Обновить успешные статусы";
+$MESS ['SALE_PS_UPDATE'] = "Обновить статусы";
+$MESS ['SALE_F_FROM'] = "с";
+$MESS ['SALE_F_TO'] = "по";
+
+$MESS ['SALE_OO_EXP'] = "Экспорт заказов";
+$MESS ['SALE_OO_EXP_DESCR'] = "В XML файл в формате CommerceML выгружаются заказы по установленному фильтру.";
+$MESS ['SALE_OO_EXP_ACT'] = "Экспортировать";
+
+$MESS ['SALE_PRINT'] = "Печать";
+$MESS ['SALE_PRINT_DESCR'] = "Печать документов";
+?>

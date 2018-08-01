@@ -1,0 +1,189 @@
+// some common stuff
+.white {color:$white}
+.beta-relative {position:relative}
+
+.bg-gray {background-color:$bg-gray}
+.color-gray {color:$color-gray}
+.color-black {color:$black}
+
+.h164 {height:164px}
+.font-large {font-size:$font-size-base-large}
+a i {color:$color4;font-size:10px;padding-left:5px;padding-right:5px}
+.other-title {line-height:30px;font-size:23px;color:$black}
+.ml85 {margin-left:85px}
+
+.beta-circle {width:75px;height:75px;text-align:center;line-height:75px;border-radius:50%;background-color:$color1;color:$white;font-size:22px;display:inline-block}
+.bg-color4 {background-color:$color4}
+.bg-color11 {background-color:$color11}
+
+// header top
+.header-top {border-bottom:1px solid $line;height:47px;}
+.menu-beta {height:47px;}
+.menu-beta li {border-right:1px solid $separator}
+.menu-beta li:first-child {border-left:1px solid $separator}
+.menu-beta li > a {padding:0 20px;line-height:47px;height:47px;display:block}
+.menu-beta li .beta-select {line-height:47px;height:47px;display:block}
+.menu-beta li select {border:none;height:46px;display:block;padding:0 20px}
+.menu-beta li a > i {margin-right:3px;color:$icon-gray}
+.menu-beta li a:hover i {color:$black}
+
+// header body
+.header-body {padding:45px 0 50px}
+#logo img {margin-bottom:13px}
+.slogan {display:inline-block;width:130px;padding:16px 0 10px 20px;border-left:1px solid $separator;margin-left:25px}
+
+// header bottom
+.header-bottom {border-top:1px solid $line;border-bottom:1px solid $line}
+.main-menu {height:60px;display:table-cell;vertical-align:middle;font-weight:normal}
+.main-menu ul {list-style:none}
+.main-menu li {padding:10px 22px;position:relative}
+.main-menu li.current-menu-item {background:$color1;}
+.main-menu li.current-menu-item > a {color:$white;text-transform:uppercase}
+.main-menu a {font-family:$font-family-menu;font-size:$font-size-menu;}
+
+.main-menu li:hover > .sub-menu {display:block}
+
+/* sub menu level 2 */
+.sub-menu, .children {display:none;position:absolute;top:100%;left:0;z-index:100;list-style:none;background: $sub-menu-bg;}
+.sub-menu li, .children li {float:none;width:100%;padding:0 40px 0 20px !important;border-bottom:1px solid $sub-menu-border}
+.sub-menu li:last-child, .children li:last-child {border-bottom:none}
+.sub-menu li a, .children li a {color:$sub-menu-color;display:block;white-space: nowrap;line-height:40px;height:40px;padding:0}
+.sub-menu li:hover, .children li:hover {background:$sub-menu-bg-hover}
+.sub-menu li:hover a, .children li:hover a {color:$sub-menu-color-hover}
+
+/* infinite submenu */
+ul.sub-menu ul.sub-menu, ul.children ul.children {display:none;left:100%;top:0}
+ul.sub-menu ul.sub-menu li a, ul.children ul.children li a {color:$sub-menu-color;}
+ul.sub-menu ul.sub-menu li:hover > a, ul.children ul.children li:hover > a {color:$sub-menu-color-hover;}
+
+// inner header
+.inner-header {background-color:$color1;padding:20px 0}
+.inner-title {color:$white;line-height:100%;margin-bottom:0px;text-transform:capitalize}
+
+// content
+#content {padding:60px 0}
+#content.space-top-none {margin-top:0;padding-top:0}
+#content.space-bottom-none {margin-bottom:0;padding-bottom:0}
+
+// aside widgets for wc
+.aside .widget {margin-bottom:50px}
+.aside .widget-title {font-size:16px;text-transform:uppercase;border:1px solid $border;padding-left:20px;border-left:3px solid $color;color:$color;}
+.aside ul li {padding:9px 20px;border-bottom:1px dotted $border}
+.aside ul li:last-child {border-bottom:none}
+
+// widgets main
+.widget-main {margin-bottom:40px}
+.widget-main #searchform {width:100%}
+.widget-main-body .tweet:first-child {padding-top:0}
+
+.widget-main-title {font-size:20px;color:$widget-title;margin-bottom:15px}
+.widget-main-body ul {list-style:none;}
+.widget-main-body li {margin-bottom:7px;}
+.widget-main-body li:before {content:"\f054";color:$color4;font-family:"FontAwesome";padding-right:8px;font-size:10px}
+
+.beta-lists > * {padding:20px;border-bottom:1px dotted $border;margin-top:0}
+.beta-lists > *:last-child {border-bottom:none;padding-bottom:0}
+
+// recent posts aside
+.recent-post {margin-bottom:20px}
+.recent-post-title {line-height:100%;color:$black;font-size:18px;margin-bottom:0}
+
+// footer
+#footer {background:$color3;color:$color7;padding:40px 0 50px}
+#footer a {color:$color7}
+#footer a:hover {color:$color4}
+#footer h4.widget-title {color:$color6;margin-bottom:22px}
+#footer ul {list-style:none}
+#footer ul li {margin-bottom:10px}
+#footer ul li i {color:$color4;margin-right:5px;font-size:10px}
+#footer input {background:$color8;border:1px solid $color9;margin-bottom:10px}
+#footer button {background:none;border:1px solid $color9;color:$color6;height:$input-height;padding:0 15px}
+#footer button:hover {color:$color4; @include animate}
+#footer button i {margin-left:5px;font-size:10px;color:$color4}
+
+.contact-info {position:relative;padding-left:35px}
+.contact-info i {font-size:35px;color:$color4;position:absolute;top:0;left:0}
+
+.copyright {background:$color5;height:50px;line-height:50px;overflow:hidden}
+.pay-options a {display:inline-block;margin-left:5px}
+
+// contact page
+.contact-title {line-height:100%;font-size:20px;color:$black}
+.contact-form input {width:60%}
+.contact-form textarea {width: 80%}
+
+
+// checkout page
+.beta-checkout-help {font-size:18px}
+.menu-underline a {margin-left:25px;text-decoration:underline}
+
+.your-order {border:1px solid $order-border;padding-bottom:35px}
+.your-order > .your-order-head:first-child {border-top:none}
+.your-order .beta-btn {background-color:$color1;color:$white !important;}
+.your-order .beta-btn i {color:$white !important}
+.your-order-head {height:55px;background-color:$order-bg;padding:0 40px;border-top:1px solid $order-border;border-bottom:1px solid $order-border;}
+.your-order-head h5 {font-size:24px;color:$blog-title;line-height:55px;}
+.your-order-body {padding:30px 40px}
+.your-order-item {padding:30px 0;border-bottom:1px solid $order-bg}
+.your-order-item.pbn {padding-bottom:0px}
+.your-order-item:last-child {padding-bottom:0px;border-bottom:0px}
+.your-order-body h5 {margin-top:-10px}
+
+.your-order-info {display:block;margin-top:-5px;margin-bottom:-2px}
+
+.payment_methods li {margin-bottom:10px;}
+.payment_methods li label {font-size:15px;color:$black}
+.payment_box {background:$order-bg;margin-left:17px;margin-top:20px;margin-bottom:30px;padding:20px;}
+
+.your-order-f18 {font-size:18px;margin-bottom:20px}
+
+// product rating
+/* Star rating */
+.star-rating {
+	float: right;
+	overflow: hidden;
+	position: relative;
+	height: 1em;
+	line-height: 1em;
+	font-size: 1em;
+	width: 5.4em;
+	font-family: 'star';
+	&:before {
+		content: "\73\73\73\73\73";
+		color: #c7c8c8;
+		float: left;
+		top: 0;
+		left: 0;
+		position: absolute;
+	}
+	span {
+		overflow: hidden;
+		float: left;
+		top: 0;
+		left: 0;
+		position: absolute;
+		padding-top: 1.5em;
+		color:$color4;
+	}
+	span:before {
+		content: "\53\53\53\53\53";
+		top: 0;
+		position: absolute;
+		left: 0;
+	}
+}
+
+.woocommerce-product-rating {
+	line-height: 2em;
+	display: block;
+
+	.star-rating {
+		margin: .5em 4px 0 0;
+		float: left;
+	}
+}
+
+.single-item-options {overflow:hidden}
+.single-item-options > * {float:left}
+.single-item-options .add-to-cart {margin-left:20px}
+.wc-select {width:90px;height:35px;margin-right:10px}

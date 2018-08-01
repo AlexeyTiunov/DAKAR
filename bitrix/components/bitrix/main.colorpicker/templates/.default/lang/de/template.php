@@ -1,0 +1,3 @@
+<?
+$MESS["DefaultColor"] = "Standards wiederherstellen";
+?>

@@ -1,0 +1,72 @@
+@function em($px, $basepx: 13)
+{
+	@return ($px / $basepx) + 0em;
+}
+
+@mixin animate($time : 0.2s)
+{
+	-webkit-transition: all $time ease-in-out;
+	-moz-transition: all $time ease-in-out;
+	-o-transition: all $time ease-in-out;
+	-ms-transition: all $time ease-in-out;
+	transition: all $time ease-in-out;
+}
+
+@function divide-cols($colnum) {
+  @return 100%/$colnum;
+}
+
+
+@mixin fancytiles($desktop-columns, $tablet-columns: $desktop-columns, $mobile-columns: 1, $small-break: 0px, $medium-break: $tablet-device-width, $large-break: $row-max-width) {
+
+  // These styles apply to all shift-columns
+  display: inline-block;
+  float: left;
+
+  @include respond("min-width: #{$small-break}") {
+    width: divide-cols($mobile-columns);
+  }
+
+  @include respond("min-width: #{$medium-break}") {
+    width: divide-cols($tablet-columns);
+  }
+
+  @include respond("min-width: #{$large-break}") {
+    width: divide-cols($desktop-columns);
+  }
+
+}
+
+// Responsive Mixins
+@mixin respond($media) {
+  @if $media == portrait-phones {
+    @media only screen and (max-width: $min-device-width) { @content; }
+  }
+  @else if $media == landscape-phones {
+    @media only screen and (min-width: breakpoint($min-device-width)) and (max-width: breakpoint($tablet-device-width)) { @content; }
+  }
+  @else if $media == all-phones {
+    @media only screen and (max-width: breakpoint($tablet-device-width)) { @content; }
+  }
+  @else if $media == portrait-tablets {
+    @media only screen and (max-width: $tablet-device-width) { @content; }
+  }
+  @else if $media == tablets {
+  	@media only screen and (min-width: $tablet-device-width) and (max-width: $document-width - 1) { @content; }
+  }
+  @else if $media == desktop {
+    @media only screen and (min-width: $tablet-device-width) { @content; }
+  }
+  @else if $media == document-width {
+    @media only screen and (max-width: $document-width + 20) { @content; }
+  }
+  @else if $media == large-screens {
+    @media only screen and (min-width: $max-device-width) { @content; }
+  }
+  @else if $media == print {
+    @media print { @content; }
+  }
+  @else {
+    @media only screen and ('#{$media}') { @content; }
+  }
+}

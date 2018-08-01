@@ -1,0 +1,10 @@
+<?
+$PERM["menu"]["2"]="X";
+$PERM["menu"]["3"]="X";
+$PERM["menu"]["4"]="X";
+$PERM["menu"]["5"]="X";
+$PERM["menu"]["7"]="X";
+$PERM["menu"]["6"]="X";
+$PERM["menu"]["*"]="X";
+$PERM["main.register"]["2"]="X";
+?>

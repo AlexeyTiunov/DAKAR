@@ -1,0 +1,29 @@
+<?
+$MESS ['currency_err1'] = "Ошибка удаления валюты.";
+$MESS ['currency_err2'] = "Все поля должны быть заполнены!";
+$MESS ['currency_err3_1'] = "Валюта";
+$MESS ['currency_err3_2'] = "уже существует.";
+$MESS ['currency_list'] = "Курсы валют";
+$MESS ['currency_sort'] = "Сорт.";
+$MESS ['currency_actions'] = "Действия";
+$MESS ['currency_empty'] = "Список валют пуст";
+$MESS ['currency_title'] = "Валюты";
+$MESS ['currency_add'] = "Добавить >>";
+$MESS ['currency_curr'] = "Валюта";
+$MESS ['currency_rate_cnt'] = "Ном.";
+$MESS ['currency_rate'] = "Курс по умолч.";
+$MESS ['currency_del'] = "Удалить";
+$MESS ['currency_upd'] = "Сохранить";
+$MESS ['currency_need'] = "*Все поля обязательны к заполнению.";
+$MESS ['CURRENCY_TITLE'] = "Валюты";
+$MESS ['CURRENCY_FULL_NAME_DESC'] = "Полное название валюты";
+$MESS ['CURRENCY_FULL_NAME'] = "Название";
+$MESS ['CURRENCY_FORMAT_DESC'] = "Строка формата для вывода валюты";
+$MESS ['CURRENCY_FORMAT'] = "Формат";
+$MESS ['CURRENCY_DEC_POINT_DESC'] = "Десятичная точка при выводе";
+$MESS ['CURRENCY_DEC_POINT'] = "Дес. точка";
+$MESS ['THOU_SEP_DESC'] = "Разделитель тысяч при выводе";
+$MESS ['THOU_SEP'] = "Разд. тысяч";
+$MESS ['DECIMALS_DESC'] = "Количество десятичных знаков";
+$MESS ['DECIMALS'] = "Дес. знаков";
+?>

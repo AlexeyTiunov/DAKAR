@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+}
+#search_brand {
+font-weight:  bolder;
+}
+/*                                Поиск по каталогу                               */
+#table_search table {
+color:black;
+background: #E0E0E0;
+/*background: #BEBEBE;*/
+border: 2px solid red;
+/*padding: 2px 3px 4px 3px;*/
+/*font: 12px Arial;*/
+z-index: 3;
+}
+#table_search td {
+border: 1px solid black;
+}
+#table_search th {
+border: 1px solid black;
+background:#AEAEAE;
+}
+
+#table_search_cena {
+font-weight:  bolder;
+}
+/*                                Поиск по сайту ???                               */
+#search_name {
+color: #323232;
+padding: 2px 3px 10px 0px;
+font: bold 8pt Times New Roman ;
+/*font-style: italic;  */
+}
+#tableFindedItemsITG
+{
+counter-reset:section;
+ /*font-size: 10px; */
+}
+#tableFindedItemsITG td
+{
+   font-size: 12px; 
+}
+#analogsp{
+     color:white;
+     font-size:12px;
+     font-weight: bold;
+}
+#tableFindedItemsITG span.counterFor:before
+{
+counter-increment:section;
+content: counter(section)". ";
+ 
+}
+#search_field {
+float: left;
+width: 139px;
+height: 17px;
+border: none !important;
+padding: 2px 3px 4px 3px;
+font: 12px Arial;
+}
+#search_button {
+float: left;
+padding: 0 0 0 10px;
+}
+/*                                Корзина                                   */
+#table_mycart table {
+color:black;
+background: #E0E0E0;
+/*background: #BEBEBE;*/
+border: 1px solid black;
+/*padding: 2px 3px 4px 3px;*/
+/*font: 12px Arial;*/
+z-index: 3;
+
+}
+#table_mycart td {
+border: 1px solid black;
+font-size: 12px;
+
+}
+#table_mycart th {
+border: 1px solid black;
+background:#AEAEAE;
+font-size: 10px;
+}
+/*                                Взаиморасчеты                                */
+#table_settlements_new table {
+/*color:black; */
+
+
+background: #f1f1f2;
+background-color:;
+margin-left:2%;
+padding-right:3px;
+/*background: #BEBEBE;*/
+border:1px solid white;
+ border-right:solid 2px #afb0b2;
+    border-bottom:solid 2px #afb0b2 ;
+/*padding: 2px 3px 4px 3px;*/
+font: 13px Arial;
+z-index: 3;
+width: 96%;
+}
+#table_settlements_new td {
+color:#080589;   
+/*color:#740101; */  
+padding-left:3px;
+padding-right:3px;
+/*border: 1px solid black;  */
+border-bottom:solid 1px #afb0b2 ;
+border-right:solid 1px #afb0b2; 
+}
+#table_settlements_new th {
+padding-left:3px;
+padding-right:3px;
+border: 1px solid black;
+background:#AEAEAE;
+}
+
+#table_settlements table {
+color:black;
+background: #E0E0E0;
+padding-left:3px;
+padding-right:3px;
+/*background: #BEBEBE;*/
+border:1px solid black;
+/*padding: 2px 3px 4px 3px;*/
+font: 13px Arial;
+z-index: 3;
+width: auto;
+}
+#table_settlements td {
+padding-left:3px;
+padding-right:3px;
+border: 1px solid black;
+}
+#table_settlements th {
+padding-left:3px;
+padding-right:3px;
+border: 1px solid black;
+background:#AEAEAE;
+}
+/*                                Отгрузка                               */
+#table_upload table {
+color:black;
+background: #E0E0E0;
+/*background: #BEBEBE;*/
+    border:solid  white 1px ;
+    border-right:solid 2px #afb0b2;
+    border-bottom:solid 2px #afb0b2 ;
+/*padding: 2px 3px 4px 3px;*/
+/*font: 12px Arial;*/
+z-index: 3;
+}
+#table_upload td {
+border: 1px solid white;
+}
+#table_upload th {
+border: 1px solid white;
+background:#AEAEAE;
+}
+#full_doc_code
+{ 
+   margin-left: 25%;
+   border:solid  white 1px ; 
+   border-right:solid 2px #afb0b2;
+    border-bottom:solid 2px #afb0b2;
+    border-top:solid  white 1px ; 
+     border-left:solid  white 1px ;  
+}
+#full_doc_code td
+{
+   /* background :#fefedc; */
+      background :#E0E0E0;
+    /*color:#080589;*/ 
+    width:150px;
+    font-size: 14px;
+    /*border:solid  white 1px ;*/
+     border-bottom:solid 2px #afb0b2;
+    
+}
+#order_to_show_title
+{  
+    margin-left: 10%;
+     /*color:#080589;*/  
+   /* border:solid  white 1px ; */
+    border-right:solid 2px #afb0b2;
+    border-bottom:solid 2px #afb0b2 ;
+     border-top:solid  white 1px ; 
+     border-left:solid  white 1px ;  
+    width: 550px;
+}
+#order_to_show_title th
+{
+   /* background :#fefedc; */
+    background :#E0E0E0;
+    width:100%;
+    border:solid  white 1px;
+     border-bottom:solid  #afb0b2 2px;
+     
+}
+#order_to_show 
+{
+    margin-left: 10%;
+    border:solid  white 1px ;
+    border-right:solid 2px #afb0b2;
+    border-bottom:solid 2px #afb0b2 ; 
+    width: 550px;
+}
+
+#order_to_show  th
+{
+    border-right: solid #E0E0E0 1px ;
+    /*background :#fefedc;*/
+      background :#E0E0E0;
+   /* border:solid  white 1px ;*/
+     /*color:#080589;*/ 
+     font-size: 12px;
+}
+#order_to_show  td
+{
+     
+    font-size: 12px;
+    border:solid  white 1px ;
+    /*color:#080589;*/  
+    background: #E0E0E0;
+   /* background :#fefedc;*/
+}
+#payment_to_show 
+{
+    margin-left: 2%;
+    border:solid  white 1px ;
+    border-right:solid 2px #afb0b2;
+    border-bottom:solid 2px #afb0b2 ; 
+    width: 97%;
+}
+#payment_to_show_title th
+{
+   /* background :#fefedc; */
+    background :#E0E0E0;
+    width:100%;
+    border:solid  white 1px;
+     border-bottom:solid  #afb0b2 2px;
+     
+}
+#payment_to_show  th
+{
+    border-right: solid #E0E0E0 1px ;
+    /*background :#fefedc;*/
+      background :#E0E0E0;
+   /* border:solid  white 1px ;*/
+     /*color:#080589;*/ 
+     font-size: 12px;
+}
+#payment_to_show  td
+{
+     
+    font-size: 11px;
+    border:solid  white 1px ;
+    /*color:#080589;*/  
+    background: #E0E0E0;
+   /* background :#fefedc;*/
+}
+#shiped_to_show_title
+{
+     margin-left: 10%;
+    color:#080589; 
+    border:solid  white 1px ;
+    border-right:solid 2px #afb0b2;
+    border-bottom:solid 2px #afb0b2 ; 
+    width: 500px;
+    
+}
+#shiped_to_show
+{
+    margin-left: 10%;
+    border:solid  white 1px ;
+    border-right:solid 2px #afb0b2;
+    border-bottom:solid 2px #afb0b2 ; 
+    width: 500px;
+    
+}
+#UsedPartsTable
+{
+    display:none;
+}
+ #UsedPartsTable th
+{
+    font-family:Arial ;
+    font-weight:bold;
+    font-size: 10pt;
+     border:solid 1px #edeef0;
+}
+#UsedPartsTable td
+{
+     font-family:Arial ;
+    font-weight:normal;
+    font-size: 10pt;
+     border:solid 1px #edeef0;
+}

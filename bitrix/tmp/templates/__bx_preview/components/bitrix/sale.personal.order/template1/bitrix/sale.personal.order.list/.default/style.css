@@ -1,0 +1,76 @@
+/*Table                             !!! Таблица со списком заказов !!!               */
+table.sale-personal-order-list
+{
+	width:100%;
+	/*background-color:#F9FAFB;*/
+	border-collapse:collapse;
+	font-size:100%;
+	color:black;
+	background: #E0E0E0;
+	border: 2px solid red;
+}
+
+/*Table head                               Заголовок списка заказов                 */
+table.sale-personal-order-list th
+{
+	/*background-image:url(images/table_head.gif);*/
+	/*background-repeat:repeat-x;*/
+	text-align: left;
+	/*color:#25639A;*/
+	border: 1px solid black;
+	background:#AEAEAE;
+}
+
+/* Table cells and heads*/
+table.sale-personal-order-list th, table.sale-personal-order-list td
+{
+	/*border:1px solid #ADC3D5;*/
+	border: 1px solid black;
+	padding: 3px 5px;
+	vertical-align:top;
+}
+
+/* Only table cells              Ячейки списка заказов                           */
+table.sale-personal-order-list td
+{
+	border: 1px solid black;
+}
+
+
+/*Filter                                Таблица фильтра                          */
+
+table.sale-personal-order-list-filter
+{
+	/*background-color:#F9FAFB;*/
+	color:black;
+	background: #E0E0E0;
+	font-size:100%;
+	border-collapse:collapse;
+	border: 1px solid black;
+}
+/*Filter                                Верх и низ фильтра                          */
+
+table.sale-personal-order-list-filter th
+{
+	/*background-image:url(images/table_head.gif);*/
+	/*background-repeat:repeat-x;*/
+	background:#AEAEAE;
+	color: black;
+	text-align: center;
+	font-size:100%;
+	/*color:#25639A;*/
+	border: 1px solid black;
+}
+
+table.sale-personal-order-list-filter td, table.sale-personal-order-list-filter th
+{
+	padding:3px;
+	/*border:1px solid #ADC3D5;*/
+	border: 1px solid black;
+}
+
+table.sale-personal-order-list-filter td
+{
+	vertical-align: top;
+	border: 1px solid black;
+}

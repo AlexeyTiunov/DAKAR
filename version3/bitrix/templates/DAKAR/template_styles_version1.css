@@ -1,0 +1,44 @@
+#type_of_auto {
+    background: rgb(45, 46, 46);
+    width: 25%;
+    float: left;
+    color:white;
+    font-family: Blogger_Sans;
+}
+    
+#type_of_model_toyota {
+    background: rgb(45, 46, 46);
+    width: 25%;
+    float: left;
+    color:white;    
+    font-family: Blogger_Sans; 
+}
+    
+#type_modification {
+    background: rgb(45, 46, 46);
+    width: 25%;
+    float: left;
+    color:white;    
+    font-family: Blogger_Sans; 
+} 
+#type_of_mileage {
+    background: rgb(45, 46, 46);
+    width: 25%;
+    float: left;
+    color:white;    
+    font-family: Blogger_Sans;  
+    
+}       
+#ts_type {
+    width: 69%;
+    height: 100px;
+    position: relative;
+    float: left;
+}
+
+#ts_type div {
+    width: 15%;
+    height: 100%;
+    float: left;
+    margin-left: 35px;
+}

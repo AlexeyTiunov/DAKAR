@@ -1,0 +1,5 @@
+<?
+$MESS["MAIN_SITE_MAP_COMPONENT_DESCR"] = "Sitemap";
+$MESS["MAIN_SITE_MAP_COMPONENT_NAME"] = "Sitemap";
+$MESS["MAIN_SITE_MAP_GROUP_NAME"] = "Sitemap";
+?>

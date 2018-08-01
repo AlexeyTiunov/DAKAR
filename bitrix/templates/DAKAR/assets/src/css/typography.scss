@@ -1,0 +1,97 @@
+// headings
+h1, .h1 {color:$hcolor;font-size:em(36.17);line-height:39.78px;font-family: $font-family-head;font-weight:400;margin-top:0}
+h2, .h2 {color:$hcolor;font-size:em(36.17);line-height:39.78px;font-family: $font-family-head;font-weight:300;margin-top:0}
+h3, .h3 {color:$hcolor;font-size:em(30);line-height:39.78px;font-family: $font-family-head;font-weight:400;margin-top:0}
+h4, .h4 {color:$hcolor;font-size:em(30);line-height:39.78px;font-family: $font-family-head;font-weight:300;margin-top:0}
+h5, .h5 {color:$hcolor;font-size:em(25);line-height:39.78px;font-family: $font-family-head;font-weight:400;margin-top:0}
+h6, .h6 {color:$hcolor;font-size:em(25);line-height:39.78px;font-family: $font-family-head;font-weight:300;margin-top:0}
+
+.title-decorator {border-bottom:1px solid $border;width:100%;height:em(42 / 2);margin-bottom:em(42 / 2)}
+.title-decorator h1,
+.title-decorator h2,
+.title-decorator h3,
+.title-decorator h4,
+.title-decorator h5,
+.title-decorator h6
+{background:$white;padding-right:17px;display:inline-block;}
+
+// lists
+ul, ol, ul label, ol label {font-weight:300}
+ul li:hover, ol li:hover {color:$black}
+
+.beta-list {list-style:none}
+.beta-list li {margin-bottom:10px}
+.beta-list i {color:$color4;font-size:10px;padding-right:10px}
+
+strong {color:$black}
+
+/** Forms Elements Style **/
+// input
+input[type="text"],
+input[type="email"],
+input[type="url"],
+textarea
+{width:100%;border:1px solid $border;height:$input-height;padding:0 12px 0}
+
+textarea {height:260px;padding:12px}
+
+.form-block {margin-bottom:10px}
+
+// checkbox
+input[type="checkbox"] {display:none}
+input[type="checkbox"] + label {position:relative;padding-left:21px;width:100%}
+input[type="checkbox"] + label span:first-child {width:13px;height:13px;display:inline-block;margin-right:8px;border:1px solid $border;position:absolute;left:0;bottom:3px}
+input[type="checkbox"]:checked + label {color:$black}
+input[type="checkbox"]:checked + label span:first-child:before {content:"\f00c";font-family:'FontAwesome';position:absolute;left:1px;top:-4px;font-size:10px}
+
+// select
+.beta-select {position:relative;}
+.beta-select select {position:absolute;top:0;left:0;width:100%;opacity:0;}
+.beta-select span {display:inline-block}
+.beta-select .beta-select-title {padding-left:20px;}
+.beta-select .beta-select-value {padding-left:5px;color:$black}
+.beta-select i {padding-left:15px;padding-right:20px;font-size:10px}
+select {box-shadow:none;border:1px solid $border;cursor:pointer;width:100%}
+
+.beta-select-primary {display:inline-block;border:1px solid $border;width:180px;padding:7px 12px}
+.beta-select-primary .beta-select-title {padding-left:0}
+.beta-select-primary i {float:right;line-height:inherit;padding-left:0;padding-right:0}
+
+// highlights
+.beta-highlight {color:$white;display:inline-block;padding-left:2px;padding-right:2px}
+
+// dropcaps
+.beta-dropcap:first-letter {float: left;font-weight:bold;font-size: 30px;}
+
+// type a
+.beta-dropcap-a:first-letter {padding-right:5px;padding-bottom:5px;padding-top:8px;}
+
+// type b
+.beta-dropcap-b:first-letter {color:$white;background:$color1;width:40px;height:40px;display:inline-block;text-align:center;line-height:40px;margin-top:6px;margin-right:5px;margin-bottom:5px}
+
+
+// sub sup style
+sup {position:relative;color:$header-color;top:-28px;font-size:30px}
+sub {color:$black;font-size:20px;position:relative;left:-35px;top:0}
+
+// beta form
+.beta-form-checkout select {line-height:37px;height:37px;}
+.beta-form-checkout input {margin-bottom:5px}
+.form-block {margin-bottom:20px;overflow:hidden}
+.form-block > * {float:left}
+.form-block label {width:200px;font-weight:lighter}
+.form-block input, .form-block select, .beta-form-checkout textarea {width:60%;overflow:hidden;}
+.form-block #apartment {margin-left:200px}
+.beta-form-checkout textarea {height:140px}
+
+// star rating
+@font-face {
+	font-family: 'star';
+	src:url('../fonts/star.eot');
+	src:url('../fonts/star.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/star.woff') format('woff'),
+		url('../fonts/star.ttf') format('truetype'),
+		url('../fonts/star.svg#star') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

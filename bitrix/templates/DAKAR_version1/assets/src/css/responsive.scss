@@ -1,0 +1,140 @@
+// Medium devices
+@media (max-width: 1200px)
+{
+	// banners
+	.beta-banner-layer.beta-btn {display:none}
+
+	// history navigation 
+	.history-navigation a {margin-right:10px}
+	.history-navigation:before {background:none}
+}
+
+// Small Devices
+@media (max-width: 993px)
+{
+	.beta-sales-item .pull-left {float:none !important}
+	.beta-person .pull-left {float:none !important}
+	.media-body.beta-person-body {padding:20px 0 !important}
+}
+
+/* For Mobiles */
+@media (max-width: 768px)
+{
+	// decrease space between block
+	.space {line-height:5px;}
+	.space10 {line-height:5px}
+	.space15 {line-height:5px;}
+	.space20 {line-height:6px}
+	.space25 {line-height:7px}
+	.space30 {line-height:8px}
+	.space35 {line-height:9px}
+	.space40 {line-height:10px}
+	.space45 {line-height:11px}
+	.space50 {line-height:12px}
+	.space55{line-height: 13px}
+	.space60{line-height: 14px}
+	.space65{line-height: 15px}
+	.space70{line-height: 16px}
+	.space75{line-height: 17px}
+	.space80{line-height: 18px}
+	.space85{line-height: 19px}
+	.space90{line-height: 20px}
+	.space95{line-height: 25px}
+	.space100{line-height: 25px}
+
+	// dg cols width
+	.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11
+	{width:100%}
+
+	.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12
+	{margin-bottom:10px}
+
+	// base changes
+	.container {width:400px}
+	#content {padding:15px 0}
+	.main-content.pull-right {float:none !important}
+	.main-content.pull-left {float:none !important}
+
+	/* handle menu */
+	.beta-menu-toggle {overflow:hidden;height:40px;line-height:40px}
+	.beta-menu-toggle i {font-size:25px;color:$icon-bg;line-height:40px}
+	.beta-menu-toggle-text {float:left;margin-top:13px;line-height:100%;margin-right:10px;display:inline-block}
+	
+	.main-menu {position:absolute;z-index:1010;width:370px;}
+	.main-menu > ul {border:1px solid $border;box-shadow:0 1px 1px rgba($border, 0.3);display:none}
+	.main-menu ul {width:100%;background:$white;}
+	.main-menu ul li {float:none;width:100%}
+		.main-menu ul.sub-menu {display:block;position:relative}
+		.main-menu ul.sub-menu ul.sub-menu {display:block;position:relative;left:0}
+	.main-menu li.current-menu-item {background-color:$white !important;color:$black !important}
+	.main-menu li.current-menu-item > a {color:$color1;font-weight:bold}
+	.sub-menu li:hover, .children li:hover {background:$white !important} 
+	.sub-menu li:hover a, .children li:hover a {color:$black !important}
+
+	// products
+	.single-item {width:270px}
+	
+	// about 2
+	.history-navigation {display:none}
+
+	// blog
+	.beta-blog {padding-bottom:10px;margin-bottom:10px}
+
+	// checkout
+	.form-block #apartment {margin-left:0px}
+	.form-block input, .form-block select, .beta-form-checkout textarea {width:100%}
+
+	// contact
+	.contact-form textarea {width:100%}
+
+	// callout boxes
+	.beta-callout-box-a .pull-left {float:none !important;width:100%}
+	.beta-callout-box-a .media-body {padding:10px}
+
+	.beta-callout-box-b, 
+	.beta-callout-box-c, 
+	.beta-callout-box-d 
+	{padding:10px}
+
+	.beta-callout-box-c .pull-right,
+	.beta-callout-box-c .pull-left
+	{float:none !important}
+	.beta-callout-box-c .media {width:100%}
+
+	// features
+	.beta-roundabout-container {height:10px}
+
+	// home 10
+	.beta-person-body {padding:20px 0}
+
+	// home 4
+	.abs-fullwidth .beta-person {text-align:center;padding:10px}
+	.beta-person-full img {width:100%}
+	.beta-person-full .beta-person-body {padding:10px}
+
+	// home 7
+	.xs-margin-top-150 {margin-top:150px}
+
+	// portfolio type a
+	.beta-filter-body.portfolio-page li {width:100%}
+
+	// text page
+	.col-sm-9.pull-right {float:none !important}
+
+	// other style
+	.widget-main {margin-bottom:15px}
+	hr {margin-top:10px;margin-bottom:10px}
+	.mb50 {margin-bottom:20px}
+	.beta-btn {margin-bottom:5px}
+	.abs-fullwidth {overflow:hidden}
+
+	// comments
+	.comment.depth-1{margin-left:0}
+	.comment.depth-2{margin-left:10px}
+	.comment.depth-3{margin-left:20px}
+	.comment.depth-4{margin-left:30px}
+	.comment.depth-5{margin-left:40px}
+
+	// beta-sales aside
+	.beta-sales-item .pull-left {float:left !important}
+}

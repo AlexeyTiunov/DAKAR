@@ -1,0 +1,7 @@
+<?
+$MESS["COMP_MAIN_COLORPICKER_NAME_DEFAULT"] = "Farbe wählen";
+$MESS["COMP_MAIN_COLORPICKER_ONSELECT"] = "Handler für die Farbauswahl";
+$MESS["COMP_MAIN_COLORPICKER_ID"] = "ID";
+$MESS["COMP_MAIN_COLORPICKER_NAME"] = "Überschrift";
+$MESS["COMP_MAIN_COLORPICKER_SHOW_BUTTON"] = "Button anzeigen";
+?>

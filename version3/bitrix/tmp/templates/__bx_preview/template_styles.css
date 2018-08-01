@@ -1,0 +1,302 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html,body { height: 100%; } 
+
+body { height: 100%; 
+	font-family: Arial ;
+} 
+a.reultAjax
+	{
+	color:#505050;
+	padding:2px 0px 2px 5px;
+	}
+a.reultAjax:hover
+	{
+	color:#930505;
+	}
+#header {
+	width: auto;
+	height: 151px;
+	background: url("images/upper.jpg");
+	background-repeat:repeat-x;
+	border-bottom: 2px solid #970303;
+}
+#logo1 {
+	margin-left: 20px;
+	margin-top: 15px;
+	width: 183px;
+	height: 130px;
+	float: left;
+	background: url("images/logo.png");
+	background-repeat:no-repeat;
+}
+#logo2 {
+	margin-left: 30px;
+	margin-top: 50px;
+	width: 262px;
+	height: 35px;
+	float: left;
+	background: url("images/avtozapchasti.png");
+	background-repeat:no-repeat;
+
+}
+#logo3 {
+	margin-right: 150px;
+	margin-top: 25px;
+	width: 114px;
+	height: 86px;
+	float: right;
+	background: url("images/koyorad_embl.JPG");
+	background-repeat:no-repeat;
+
+}
+#kurs {
+	margin-top: 10px;
+	margin-right: 20px;
+	float: right;
+	color: #edaf1f;
+	font: bold 8pt Arial ;
+}
+#search {
+	position: absolute; right: 10px;
+
+	margin-top: 70px;
+
+}
+#top_menu {
+	/*width: 370px;*/
+	width: 800px;	
+	position: absolute;
+	margin-left: 240px;
+	margin-top: 121px;
+}
+#middle {
+	width: auto;
+	min-height: 1500px;
+	height: auto;
+	background-color: #080909;
+	z-index: 1;
+}
+#middle_up {
+	width: auto;
+	min-height: 700px;
+	height: auto;
+	background: url("images/lights.png");
+	background-repeat:no-repeat;
+	z-index: 2;
+	margin-down: 389px;
+}
+#empty {
+	height: 1px;
+	clear:both;
+}
+
+#left_sb {
+	float: left;
+	/*position: static;*/
+	margin-left: 20px;
+	margin-top: 20px;
+	width: 204px;
+}
+#left_menu {
+
+
+	width: 204px;
+}
+#left_sb_news {
+	/*float: left;*/
+	/*position: static;*/
+	margin-top: 20px;
+	padding: 5px 0 5px 0;
+	width: 204px;
+	/*text-align: center;*/
+	color: #FFFFFF;
+	font-size: 12px;
+	background-color: #181C18;
+}
+#left_sb_banner{
+
+	margin-top: 20px;
+
+	height: 124px;
+	width: 204px;
+	display:block;
+
+
+}
+#left_sb_link {
+	background: url(images/fp_racing.jpg) no-repeat;
+	margin-top: 20px;
+	padding: 5px 0 5px 0;
+	height: 124px;
+	width: 204px;
+	color: #FFFFFF;
+	font-size: 12px;
+	background-color: #181C18;
+}
+/*#empty1 {
+	height: 1px;
+	clear:both;*/
+#auth_up {
+	background: url(images/avtorizacia_up_btm.jpg) no-repeat;
+	margin-top: 10px;
+	height: 24px;
+	width: 204px;
+
+    color: #FFFFFF;
+    font-size: 12px;
+    /*font-weight: bold;*/
+    /*font-family: Tahoma;*/
+    padding-left: 15px;
+    padding-right: 0;
+    padding-top: 5px;
+	/*font:12px bold Arial;*/
+	/*clear:both;*/
+}
+#auth {
+	background: url(images/avtorizacia_login_btm.jpg) no-repeat;
+	height: auto;
+	width: 204px;
+	color: #FFFFFF;
+}
+
+#content {
+	height: auto;
+	color: #FFFFFF;
+	position: relative;
+	/*float: left;*/
+	/*float: right;*/		
+	margin-left: 260px;
+	margin-right: 20px;
+	margin-top: 20px;
+	/*max-height: 700px;*/
+	/*overflow: auto;*/
+	z-index: 4;
+	min-height:1254px;
+	margin-right:230px;
+}
+#content a,.itgBest a{
+	/*color: red; #EDAF1F*/ 
+	color: #EDAF1F;
+	/*text-decoration: none;*/
+}
+#content a:hover{
+	color: #EDAF1F;
+	/*text-decoration: underline;*/
+}
+.itgBest:hover{
+	color: #EDAF1F;
+	/*text-decoration: underline;*/
+}
+div.itgBest span{
+	color: white;
+}
+#middle_down {
+	width: auto;
+	min-height: 389px;
+	background: url("images/car_01.png");
+	background-repeat:no-repeat;
+	z-index: 2;
+	margin-top: -389px;
+}
+#middle {
+	height: auto;
+	clear:both;
+}
+#footer {
+	border-top: 2px solid #970303;
+	height: 70px;
+	background-color: #080909;
+	color: #FFFFFF;
+}
+#footer_text {
+	margin-left: 50px;
+	margin-top: 25px;
+	font: 12pt Arial;
+}
+#content a.itg-basket-style,#content table.sale-personal-order-list a
+{
+color:#7a6200;
+font-weight: bold;
+text-decoration:none;
+}
+#content a.itg-basket-style,#content table.sale-personal-order-list a:hover
+{
+text-decoration:underline;
+color:#00000;
+}
+.settlements
+{
+padding-left:3px;
+padding-right:3px;
+}
+#brandSearchITG
+{
+margin:3px 100px 3px 100px;
+text-align:center;
+display:block;
+
+/*display:inherit;*/
+background-color:#e3e3e3;
+padding:20px 30px 20px 30px;
+-webkit-box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 7);
+-moz-box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 7);
+box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 7); 
+}
+#brandSearchITG div
+{
+display:inline; 
+display:inline-block;
+margin:0px; 
+padding:10px 15px 10px 15px;
+}
+#brandSearchITG div a
+{
+color:black;
+text-decoration:none;
+}
+#brandSearchITG div a:hover
+{
+text-decoration:underline;
+color:#930e24;
+}
+#itemSearchITG table
+{
+border-style:solid;
+border-width:1px;
+border-bottom-color:#8b8b8b;
+padding:3px;
+text-align:center;
+background-color:#cecece;
+color:#000000;
+}
+#itemSearchITG table th
+{
+border:solid 1px #8b8b8b;
+color:#373737;
+}
+#itemSearchITG table tr
+{
+font-size:14px;
+}
+#itemSearchITG table td
+{
+border:solid 1px #8b8b8b;
+}
+#itemSearchITG table tr.searchAnalogITG
+{
+background-color:#d5d5d5;
+font-style:italic;
+text-align:left; 
+font-size:12px;
+}
+#itemSearchITG table tr.searchAnalogITG a
+{
+color:black;
+}
+#itemSearchITG table tr.searchAnalogITG a:hover
+{
+color:#930e24;
+}

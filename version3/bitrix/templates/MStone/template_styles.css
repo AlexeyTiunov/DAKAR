@@ -1,0 +1,425 @@
+*{
+   /*font-family:Cambria;  */
+   
+}
+html {
+      top:35px; 
+      height: auto;
+      overflow: hidden;
+        
+     } 
+     body {
+    /*background-image: url(../images/Bg_autodoc.jpg); 
+    background-image: url(Images/BodyGround1.jpg);
+    background-size: cover;                        */
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+   
+    background-attachment: fixed;
+   
+    
+    
+    /*min-height: 1000px; */
+     /*height - назначаеться в header Jquery*/  
+}
+ #common
+ {
+     position: absolute;
+     /*height - inline difinition*/
+     width:80%;
+     left:10%;
+     top:0;
+     background-image: url(Images/BodyGround1.jpg);
+    background-size: cover;
+       
+ }
+ #AUTH
+ {
+     display:none;
+     position: absolute;
+     top:0;
+     right:1%;
+     z-index: 999;
+     background-color: white;
+     border-radius:5px;
+     border:double 2px black;
+ }
+ #head
+ {
+    position: absolute;
+    width:80%;
+    height:20%;
+    left:10%;
+    top:1%;
+    background-color: rgba(255,255,255,0.71);
+    border-bottom: solid  3px rgba(08,24,92,0.2) ; 
+     border-right : solid  3px rgba(08,24,92,0.1) ; 
+     /* border-right :solid  4px rgba(255,255,255,0.2) ;*/ 
+     border-top :solid  3px rgba(255,255,255,0.01) ;
+     border-left :solid  3px rgba(255,255,255,0.01) ; 
+     
+     border-radius:2px;
+ }
+  #logo
+  {
+   background-image: url(Images/Logo3.gif); 
+   position: absolute;
+   width:15%;
+   height: 90%;
+   left:1%; 
+   background-size: cover; 
+      
+  }
+  #title
+  {
+      position: absolute;
+      width:84%;
+      left:16%;
+      
+      
+  }
+  #title .bigtext
+  {
+  letter-spacing:5px;
+  line-height: 50px;
+  font-family: Perpetu;
+  font-size:50px;
+  color: #091a9e;
+  margin-top :1%;
+  margin-bottom: 1px;
+  text-shadow: 3px 3px 6px black;
+  }
+   #title .smalltext  
+   {
+       margin-top :1px; 
+       font-family: Times New Roman sans-serif;
+       font-size:35px;
+       line-height: 40px;
+       letter-spacing: 1px;  
+   } 
+  
+  nav {
+    
+    height:5%;
+    top:25%;
+    position: absolute;
+    left:10%;
+    width:90%;
+}
+
+
+nav li {
+    float: left;
+    list-style: none;
+   /* background-image: url(Images/MenuButton.gif);*/
+    font: bold 12pt Oswald sans-serif;
+     background-size: cover;
+     height: 95%;
+     margin-left: 1%;
+     margin-top: 1px;
+     width:auto;
+}
+
+nav a {
+    color:black;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 3px 15px;
+    
+     border-radius: 5px;
+     
+    
+    background: -webkit-linear-gradient(rgba(255,255,255,0.6) 1%, #010b2e); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(255,255,255,0.6) 1%, #010b2e); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(255,255,255,0.6) 1%, #010b2e); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(255,255,255,0.6) 10%, #010b2e); /* Standard syntax (must be last) */
+   
+
+}
+nav ul
+{
+   height: 100%;
+   width:90%;
+   margin-left : 5%; 
+   /*margin:auto; */ 
+    
+}
+
+nav a:hover {
+    padding: 3px 15px;
+
+    
+    background-color: #e20000;
+    border-radius: 5px;
+
+}
+#main
+{
+    position: absolute;
+     top:1px; 
+    width:100%;
+    height:100%;
+    
+    overflow: auto; 
+}
+#leftmenu
+{
+    position: absolute;
+    top:35%;
+    width:150px;
+    height: auto;
+    left:5%;
+    
+    
+    
+}
+#GaleryLeftmenu
+{
+    position: absolute;
+    top:35%;
+    width:25%;
+    height:auto;
+    left:5%;
+    
+    
+    
+}
+#GaleryLeftmenu .GaleryLeftmenuIn
+{
+    float:left;
+    width:80%;
+    height:60px;
+    margin-top: 2px;
+    margin: auto;
+    background: -webkit-linear-gradient(rgba(255,255,255,0.6) 1%, #010b2e); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(255,255,255,0.6) 1%, #010b2e); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(255,255,255,0.6) 1%, #010b2e); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(255,255,255,0.8) 10%, #9c9797); /* Standard syntax (must be last) */
+    border-radius:7px; 
+      box-shadow: 5px 5px 5px #888888;
+      font-family: Times New Roman sans-serif; 
+      text-align: center;
+      font-weight: 700;
+      margin-top:5%;
+    
+}
+#GaleryLeftmenu .GaleryLeftmenuIn p
+{
+   font-family: Times New Roman sans-serif;  
+  margin-bottom: 1px; 
+   font-weight: 500;
+   text-decoration: none;
+   margin-top: 20px;
+   color:black; 
+   letter-spacing: 2px;   
+}
+ #GaleryLeftmenu .GaleryLeftmenuIn p a
+{
+text-decoration: none;
+font-family: Times New Roman sans-serif;  
+color: black;
+font-size: 20px;
+}
+#leftmenu a
+{
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: Times New Roman sans-serif;
+}
+.InLeftMenu
+{
+    
+   width:150px;
+   height:150px;
+   float:left;
+   margin-top: 10px;
+   border-radius:5px;
+   
+    
+}
+#center
+{ 
+ position: absolute;
+  left:30%;
+  width :50%; 
+  height:auto; 
+  font-family: Times New Roman sans-serif;
+  text-align: justify;
+  top:36%;
+  font-size: 18px;
+  font-weight:600;
+ /* background-color: rgba(255,255,255,0.5); */
+  border-radius:5px
+    
+}
+
+.GaleryStoneMain
+{
+  position: absolute;   
+   left:25%; 
+   width :75%;
+   height:100%; 
+    top:36%;  
+}
+.GaleryStoneMain .GaleryStoneMainIn
+{
+     float:left;
+     width:18%;
+     height:50%;
+     margin-left:3%;
+     margin-top:0.5%;
+     
+     
+    
+} 
+ .GaleryStoneMain .GaleryStoneMainInText
+ {
+     float:left;  
+     width:90%;
+      height:auto;
+       margin-left:3%;
+     margin-top:1%; 
+     font-family: Times New Roman sans-serif;
+    text-align: justify;
+   font-size: 18px;
+   font-weight: 600;
+ }
+
+ .GaleryStoneMain .GaleryStoneMainIn img
+ {
+     width:100%;
+     height:60%;
+     float:left;
+     
+ }
+ .GaleryStoneMain .GaleryStoneMainIn .info
+ {
+       float:left;
+       width:100%;
+       height:auto;
+       text-align: justify;
+ }
+ .GaleryStoneMain .GaleryStoneMainIn .info p
+ {
+ margin-top: 1px;
+font-family: Perpetu;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 1px;
+margin-bottom: 1px;
+font-weight: 600;
+text-align: center;
+width: 100%;
+     
+ }
+  .StoneMain
+{
+  position: absolute;   
+   left:25%; 
+   width :75%;
+   height:auto; 
+    top:36%;  
+}
+.StoneMain .StoneMainInTitle
+{
+    float:left;
+    width:150px;
+    height:50px;
+    margin-top: 2px;
+   /* margin: auto; */
+    margin-left:15%;
+    background: -webkit-linear-gradient(rgba(255,255,255,0.6) 1%, #010b2e); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(255,255,255,0.6) 1%, #010b2e); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(255,255,255,0.6) 1%, #010b2e); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(255,255,255,0.8) 10%, #9c9797); /* Standard syntax (must be last) */
+    border-radius:7px; 
+      box-shadow: 5px 5px 5px #888888;
+      font-family: Times New Roman sans-serif; 
+      text-align: center;
+      font-weight: 700;
+}
+.StoneMain .StoneMainInPic
+{
+    float:left;
+    width:150px;
+    height:150px;
+    margin-top:3%;
+    margin-left:10%;
+   
+    /*background: url(Images/StonePicBackground.jpg);*/
+     background-size: cover;     
+}
+.StoneMain .StoneMainInPicInfo
+{
+    float:left;
+    width:60%;
+    height:auto;
+    margin-top:0;
+   width:auto;
+   margin-left:15%;  
+   /* background: url(Images/StonePicInfoBackground.jpg);*/
+     background-size: cover;  
+              
+    
+    
+}
+.StoneMain .StoneMainInPicInfo p
+{
+    margin-top :1px; 
+       font-family: Perpetu;
+       font-size:12px;
+       line-height: 15px;
+       letter-spacing: 1px;
+       margin-bottom: 1px;
+       font-weight: 600; 
+      /*text-align: center;*/ 
+      width:150%;
+}
+ .StoneMain .StoneMainInPic img
+ {
+     width:100%;
+     height:100% ;
+     margin-left:10%;
+     margin-top:-5%;
+ }
+.StoneMain .StoneMainIn
+{
+    float:left;
+    width:33%;
+    height:auto;
+    
+    
+    
+    
+    
+}
+#bottom
+{
+    position: absolute;
+    bottom: 1px;
+    height:20px;
+    border-top:solid 1px black;
+    width:100%;
+    
+}
+#PriceList td
+   {
+    border: solid 1px grey;
+    width:14%;    
+    text-align: center;   
+   }
+   #PriceList th
+   {
+    border: solid 1px grey;
+    width:14%;    
+    text-align: center;   
+   }
+   #PriceList
+   {
+     border: solid 1px grey; 
+     width: 100%;  
+   }

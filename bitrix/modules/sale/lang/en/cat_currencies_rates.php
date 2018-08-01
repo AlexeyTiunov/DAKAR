@@ -1,0 +1,30 @@
+<?
+$MESS ['curr_rates_flt_date'] = "Date:";
+$MESS ['curr_rates_flt_btn'] = "Set Filter";
+$MESS ['curr_rates_nav'] = "Rates";
+$MESS ['curr_rates_rate'] = "Rate";
+$MESS ['curr_rates_rate_cnt'] = "Amount";
+$MESS ['curr_rates_del'] = "Delete";
+$MESS ['curr_rates_query'] = "Query";
+$MESS ['curr_rates_reset'] = "Reset";
+$MESS ['curr_rates_title'] = "Currency rates";
+$MESS ['curr_rates_list'] = "Currencies";
+$MESS ['curr_rates_err1'] = "Incorrect date format of the beginning period.";
+$MESS ['curr_rates_err2'] = "Incorrect date format for the ending period.";
+$MESS ['curr_rates_curr'] = "Currency:";
+$MESS ['curr_rates_all'] = "(all)";
+$MESS ['curr_rates_date1'] = "Date";
+$MESS ['curr_rates_curr1'] = "Currency";
+$MESS ['curr_rates_upd'] = "Save";
+$MESS ['CURRENCY_TITLE'] = "Currency rates";
+$MESS ['ERROR_ADD_REC'] = "Error adding a record";
+$MESS ['ERROR_ADD_REC2'] = "The rate has probably been set for this date.";
+$MESS ['ERROR_UPDATE_REC'] = "Error updating the record";
+$MESS ['ERROR_QUERY_RATE'] = "Error querying the rate";
+$MESS ['ERROR_EMPTY_ANSWER'] = "Empty server response.";
+$MESS ['ERROR_SAVING_RATE'] = "Error saving the rate";
+$MESS ['ERROR_SAVING_RATE1'] = "The rate was not set.";
+$MESS ['ERROR_SAVING_RATE2'] = "The amount was not set.";
+$MESS ['ERROR_DATE_RATE'] = "The date of the rate was not set";
+$MESS ['SALE_F_DEL'] = "Remove Filter";
+?>

@@ -1,0 +1,1 @@
+ UPDATE b_sale_order  SET IS_MAIL_SENT='1' WHERE ID='1028'

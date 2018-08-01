@@ -1,0 +1,180 @@
+<?
+IncludeModuleLangFile(__FILE__);
+
+class CUserTypeIBlockSection extends CUserTypeEnum
+{
+	function GetUserTypeDescription()
+	{
+		return array(
+			"USER_TYPE_ID" => "iblock_section",
+			"CLASS_NAME" => "CUserTypeIBlockSection",
+			"DESCRIPTION" => GetMessage("USER_TYPE_IBSEC_DESCRIPTION"),
+			"BASE_TYPE" => "int",
+		);
+	}
+
+	function PrepareSettings($arUserField)
+	{
+		$height = intval($arUserField["SETTINGS"]["LIST_HEIGHT"]);
+		$disp = $arUserField["SETTINGS"]["DISPLAY"];
+		if($disp!="CHECKBOX" && $disp!="LIST")
+			$disp = "LIST";
+		$iblock_id = intval($arUserField["SETTINGS"]["IBLOCK_ID"]);
+		if($iblock_id <= 0)
+			$iblock_id = "";
+		$section_id = intval($arUserField["SETTINGS"]["DEFAULT_VALUE"]);
+		if($section_id <= 0)
+			$section_id = "";
+		return array(
+			"DISPLAY" => $disp,
+			"LIST_HEIGHT" => ($height < 2? 5: $height),
+			"IBLOCK_ID" => $iblock_id,
+			"DEFAULT_VALUE" => $section_id,
+		);
+	}
+
+	function GetSettingsHTML($arUserField = false, $arHtmlControl, $bVarsFromForm)
+	{
+		$result = '';
+
+		if($bVarsFromForm)
+			$iblock_id = $GLOBALS[$arHtmlControl["NAME"]]["IBLOCK_ID"];
+		elseif(is_array($arUserField))
+			$iblock_id = $arUserField["SETTINGS"]["IBLOCK_ID"];
+		else
+			$iblock_id = "";
+		if(CModule::IncludeModule('iblock'))
+		{
+			$result .= '
+			<tr valign="top">
+				<td>'.GetMessage("USER_TYPE_IBSEC_DISPLAY").':</td>
+				<td>
+					'.GetIBlockDropDownList($iblock_id, $arHtmlControl["NAME"].'[IBLOCK_TYPE_ID]', $arHtmlControl["NAME"].'[IBLOCK_ID]').'
+				</td>
+			</tr>
+			';
+		}
+		else
+		{
+			$result .= '
+			<tr valign="top">
+				<td>'.GetMessage("USER_TYPE_IBSEC_DISPLAY").':</td>
+				<td>
+					<input type="text" size="6" name="'.$arHtmlControl["NAME"].'[IBLOCK_ID]" value="'.htmlspecialchars($value).'">
+				</td>
+			</tr>
+			';
+		}
+
+		if($bVarsFromForm)
+			$value = $GLOBALS[$arHtmlControl["NAME"]]["DEFAULT_VALUE"];
+		elseif(is_array($arUserField))
+			$value = $arUserField["SETTINGS"]["DEFAULT_VALUE"];
+		else
+			$value = "";
+		if(($iblock_id > 0) && CModule::IncludeModule('iblock'))
+		{
+			$result .= '
+			<tr valign="top">
+				<td>'.GetMessage("USER_TYPE_IBSEC_DEFAULT_VALUE").':</td>
+				<td>
+					<select name="'.$arHtmlControl["NAME"].'[DEFAULT_VALUE]" size="5">
+						<option value="">'.GetMessage("IBLOCK_VALUE_ANY").'</option>
+			';
+
+			$rsSections = CIBlockSection::GetTreeList(Array("IBLOCK_ID"=>$iblock_id));
+			while($arSection = $rsSections->GetNext())
+				$result .= '<option value="'.$arSection["ID"].'"'.($arSection["ID"]==$value? " selected": "").'>'.str_repeat("&nbsp;.&nbsp;", $arSection["DEPTH_LEVEL"]).$arSection["NAME"].'</option>';
+
+			$result .= '</select>';
+		}
+		else
+		{
+			$result .= '
+			<tr valign="top">
+				<td>'.GetMessage("USER_TYPE_IBSEC_DEFAULT_VALUE").':</td>
+				<td>
+					<input type="text" size="8" name="'.$arHtmlControl["NAME"].'[DEFAULT_VALUE]" value="'.htmlspecialchars($value).'">
+				</td>
+			</tr>
+			';
+		}
+
+		if($bVarsFromForm)
+			$value = $GLOBALS[$arHtmlControl["NAME"]]["DISPLAY"];
+		elseif(is_array($arUserField))
+			$value = $arUserField["SETTINGS"]["DISPLAY"];
+		else
+			$value = "LIST";
+		$result .= '
+		<tr valign="top">
+			<td>'.GetMessage("USER_TYPE_ENUM_DISPLAY").':</td>
+			<td>
+				<label><input type="radio" name="'.$arHtmlControl["NAME"].'[DISPLAY]" value="LIST" '.("LIST"==$value? 'checked="checked"': '').'>'.GetMessage("USER_TYPE_IBSEC_LIST").'</label><br>
+				<label><input type="radio" name="'.$arHtmlControl["NAME"].'[DISPLAY]" value="CHECKBOX" '.("CHECKBOX"==$value? 'checked="checked"': '').'>'.GetMessage("USER_TYPE_IBSEC_CHECKBOX").'</label><br>
+			</td>
+		</tr>
+		';
+		if($bVarsFromForm)
+			$value = intval($GLOBALS[$arHtmlControl["NAME"]]["LIST_HEIGHT"]);
+		elseif(is_array($arUserField))
+			$value = intval($arUserField["SETTINGS"]["LIST_HEIGHT"]);
+		else
+			$value = 5;
+		$result .= '
+		<tr valign="top">
+			<td>'.GetMessage("USER_TYPE_IBSEC_LIST_HEIGHT").':</td>
+			<td>
+				<input type="text" name="'.$arHtmlControl["NAME"].'[LIST_HEIGHT]" size="10" value="'.$value.'">
+			</td>
+		</tr>
+		';
+		return $result;
+	}
+
+	function CheckFields($arUserField, $value)
+	{
+		$aMsg = array();
+		return $aMsg;
+	}
+
+	function GetList($arUserField)
+	{
+		$rsSection = false;
+		if(CModule::IncludeModule('iblock'))
+		{
+			$obSection = new CIBlockSectionEnum;
+			$rsSection = $obSection->GetTreeList($arUserField["SETTINGS"]["IBLOCK_ID"]);
+		}
+		return $rsSection;
+	}
+}
+//if(CModule::IncludeModule('iblock'))
+//{
+	class CIBlockSectionEnum extends CDBResult
+	{
+		function GetTreeList($IBLOCK_ID)
+		{
+			$rs = false;
+			if(CModule::IncludeModule('iblock'))
+			{
+				$rs = CIBlockSection::GetTreeList(Array("IBLOCK_ID"=>$IBLOCK_ID));
+				if($rs)
+				{
+					$rs = new CIBlockSectionEnum($rs);
+				}
+			}
+			return $rs;
+		}
+
+		function GetNext($bTextHtmlAuto=true, $use_tilda=true)
+		{
+			$r = parent::GetNext($bTextHtmlAuto, $use_tilda);
+			if($r)
+				$r["VALUE"] = str_repeat(" . ", $r["DEPTH_LEVEL"]).$r["NAME"];
+			return $r;
+		}
+	}
+	AddEventHandler("main", "OnUserTypeBuildList", array("CUserTypeIBlockSection", "GetUserTypeDescription"));
+//}
+?>

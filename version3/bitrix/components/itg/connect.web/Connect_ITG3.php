@@ -1,0 +1,246 @@
+<?php
+require_once $_SERVER["DOCUMENT_ROOT"]."/bitrix/components/itg/Search/Search_ITG2.php";
+
+class Connect_ITG
+{
+	public static  $log = array(
+							'tehnomir'	=>array('pass'		=>'251110',
+												'log'		=>'Zolotov',
+												'url'		=>'http://tehnomir.com.ua/ws/soap.wsdl',
+												'encoding'	=>'cp1251',
+												'region'	=>'UW1'),
+							'autopalma'	=>array('pass'		=>'3cgz8k',
+												'log'		=>'Zolotov',
+												'url'		=>'http://twinauto.net/wsdl/server.php?wsdl',
+												'encoding'	=>'cp1251',
+												'region'	=>'UW2'),
+                             'automir'   =>array( 'pass'     =>'336169',
+  'log'     =>'DOK',
+ 'url'     =>'http://avto-mir.od.ua/wsdl/server.php?wsdl',
+  'encoding' =>'cp1251',
+  'region'   =>'UW3'                        
+  )                  
+  
+ 
+  
+  );
+	private $params = array();
+	private $client;
+	private $result;
+         private $clientmir;
+	private $sql = array();
+	
+	function __construct($params)
+	{
+		$this->params = $params;
+		foreach (self::$log as $name=>$propsClient)
+		{
+			$this->params['client'] = $name;
+			$this->client = @new SoapClient(self::$log[$this->params['client']]['url'], array('encoding'=>self::$log[$this->params['client']]['encoding']));
+
+
+                        $this->authorization(); 
+			$this->prepareResult();
+		}
+                      
+	}
+	public function getResult()
+	{
+		return $this->resultToReturn;
+	}
+	private function authorization()
+	{
+		$log = self::$log[$this->params['client']]['log'];
+		$pass = self::$log[$this->params['client']]['pass'];
+		$partnumber = $this->params['article'];
+                
+		switch ($this->params['client'])
+		{          case 'automir':
+ // $this->clientmir = @new SoapClient("http://avto-mir.od.ua/wsdl/server.php?wsdl", array('encoding'=>'cp1251'));
+                          $Login = $log;
+                          $Passwd = $pass;
+                          $OemCode = $partnumber ;
+                           $MakeId =0;
+                          $UserParam = array('login'=>$Login,'passwd'=>$Passwd);
+                          $result =  $this->client->getPartsPrice($OemCode,$MakeId,$UserParam); 
+                            break;  
+			case 'tehnomir':
+
+				$brand = ($this->params['brand'] != '')?$this->params['brand']:'';
+				$result = $this->client->GetPrice($partnumber, $brand, $log, $pass);
+				break;
+			case 'autopalma':
+				$userParam = array('login'=>$log,'passwd'=>$pass);
+                try
+                {
+				$result = $this->client->getPartsPrice($partnumber,$userParam); 
+                }
+                catch (Exception $e) 
+                        {
+                            echo 'Выброшено исключение: ',  $e->getMessage(), "\n";
+                       }
+				break;
+                        
+		}
+		$this->result = $result;
+		#echo "-------------------<br /><pre>";
+		#print_r($this->result);
+        #echo "</pre>";
+	}
+	private function prepareResult()
+	{
+		$products = array();
+		$DB = Search_ITG::manualConnect();
+		
+		if (count($this->result) == 0) return array();
+                # echo "<pre>";
+		#print_r($this->result);
+		#echo "</pre>";
+		foreach ($this->result as $key=>$product)
+		{
+            //if ((isset($product['DeliveryTime']) && intval($product['DeliveryTime']) != 1) || (isset($product['Quantity']) && intval($product['Quantity']) == 0)) continue;
+		   //if (isset($product['Quantity']) && intval($product['Quantity']) == 0) continue; 
+              //if ((isset($product["SupplierCode"]) && iconv('cp1251','utf8',$product["SupplierCode"])!="usaf") ||(isset($product["SupplierCode"]) && iconv('cp1251','utf8',$product["SupplierCode"])!="klod") )continue;  
+               //if ($product["SupplierCode"]!="USAF" || $product["SupplierCode"]!="KLOD") continue;
+            //if ((isset($product['Quantity']) && intval($product['Quantity']) == 0)||(isset($product["SupplierCode"]) && iconv  ('utf8','cp1251',$product["SupplierCode"])!="KLOD" && iconv('utf8','cp1251',$product["SupplierCode"])!="USAF") )
+                 //continue;
+if ((isset($product['Quantity']) && intval($product['Quantity']) == 1000)||(isset($product["SupplierCode"]) && $product["SupplierCode"]!="KLOD" && $product["SupplierCode"]!="USAF" && $product["SupplierCode"]!="STOK" && $product["SupplierCode"]!="USAM"  ) ) continue;  
+                                                                                                                                              
+           
+           if (isset($product['Dostavka']) && (intval($product['Dostavka']) != 2 || (intval($product['Qty1']) == 0 && intval($product['Qty2']) == 0 && intval($product['Qty3'] == 0)))) continue;
+			if (  ( isset($product['Postavwik'])&& $product['Postavwik'] != 'Ukraine - 0d.')  || (isset($product['Available']) && intval($product['Available'])==0) ) continue;
+            switch ($this->params['client'])
+			{
+				 case 'automir':
+                  $product['CAPTION'] = $product['PartNameEng'];
+                     #echo "<pre>";
+		#print_r($product['CAPTION']);
+		#echo "</pre>";
+                  $product['ICODE']=$product['DetailNum'] ;
+                  $product['DELIVERY']=1;
+                  $product['REGIONR'] = 'УКРАИНА';
+                  $product['Brand']=$product['MakeName'];
+                   $this->prepareSql();
+            #echo $this->sql['partColumnRegion'];
+            $sqlQuery = $DB->query($this->sql['partColumnRegion']);
+            $sqlRes = $sqlQuery->fetch_assoc();
+            $this->params['propertyColumn'] = "PROPERTY_".$sqlRes['RegionColumn'];//формируем коэффициенты для пересчета цен
+            $this->prepareSql();
+            #echo $this->sql['suppliers'];
+            $sqlQuery = $DB->query($this->sql['suppliers']);
+            $sqlRes = $sqlQuery->fetch_assoc();
+            $product['PRICEREGION'] = $sqlRes['koefPrice']*$product['Price'];
+            $product['CURRREGION'] = $sqlRes['CurrencyCode'];
+            $this->params['CURRREGION'] = $product['CURRREGION'];
+            $this->prepareSql();
+            #echo $this->sql['rate'];
+            $sqlQuery = $DB->query($this->sql['rate']);
+            $sqlRes = $sqlQuery->fetch_assoc();
+            $product['PRICEREGIONINCURRENCY'] = $product['PRICEREGION']*$sqlRes['Rate'];
+            $product['CS']="#eed5d5" ; 
+            $product['REGION'] = self::$log[$this->params['client']]['region'];     
+                 break;
+                
+                case 'tehnomir':
+					//echo intval($product['DeliveryTime'])."<br />";
+					//echo intval($product['Quantity'])."<br />";
+					#if (intval($product['DeliveryTime']) != 1 || intval($product['Quantity']) == 0) continue 2;
+					#echo "-------------------<br /><pre>";
+					#print_r($product['Name']);
+					#echo "</pre>";
+                    
+					$product['CAPTION'] = iconv('cp1251','utf8',$product['Name']);
+                     #$product['CAPTION'] =$product['Name']; 
+                    # echo "-------------------<br /><pre>";
+                      #print_r($product['Name']);
+                      #echo "</pre>";
+                      
+					$product['ICODE'] = $product['Number'];
+					$product['DELIVERY'] = $product['DeliveryTime'] + 1;
+                    $product['REGIONR']=($product['SupplierCode']=='USAF' or $product['SupplierCode']=='USAM' ) ? 'USA'  :'УКРАИНА' ;
+                   // $product['PRICEREGIONINCURRENCY']=$product['Price']-($product['Price']*0.1);
+            $this->prepareSql();
+            #echo $this->sql['partColumnRegion'];
+            $sqlQuery = $DB->query($this->sql['partColumnRegion']);
+            $sqlRes = $sqlQuery->fetch_assoc();
+            $this->params['propertyColumn'] = "PROPERTY_".$sqlRes['RegionColumn'];//формируем коэффициенты для пересчета цен
+            $this->prepareSql();
+            #echo $this->sql['suppliers'];
+            $sqlQuery = $DB->query($this->sql['suppliers']);
+            $sqlRes = $sqlQuery->fetch_assoc();
+            $sqlQueryR = $DB->query($this->sql['koef']);
+             $sqlResR = $sqlQueryR->fetch_assoc();
+            $product['PRICEREGIONP'] = ($product['SupplierCode']=='USAF' or $product['SupplierCode']=='USAM') ?$product['Price']-($product['Price']*0.1): /*$sqlRes['koefPrice']**/$product;
+             $product['PRICEREGION']= ($product['SupplierCode']=='USAF' or $product['SupplierCode']=='USAM')?$product['PRICEREGIONP']*$sqlResR['COEF'] : $sqlRes['koefPrice']*$product['Price'];
+            $product['CURRREGION'] = $sqlRes['CurrencyCode'];
+            $this->params['CURRREGION'] = $product['CURRREGION'];
+            $this->prepareSql();
+            #echo $this->sql['rate'];
+            $sqlQuery = $DB->query($this->sql['rate']);
+            $sqlRes = $sqlQuery->fetch_assoc();
+            $product['PRICEREGIONINCURRENCY'] =($product['SupplierCode']=='USAF' or $product['SupplierCode']=='USAM') ?$product['PRICEREGION'] : $product['PRICEREGION']*$sqlRes['Rate'];
+             $product['CS']=($product['SupplierCode']!='USAF' and $product['SupplierCode']!='USAM')?'#eed5d5':'#e3e3e3' ;      
+             $product['REGION'] =($product['SupplierCode']=='USAF' or $product['SupplierCode']=='USAM') ?'USA': self::$log[$this->params['client']]['region'];       
+                    
+					//$product['REGION'] = $this->log[$this->params['client']]['region'];
+					break;
+				case 'autopalma':
+					//echo intval($product['Dostavka'])."<br />";
+					//echo intval($product['Qty1'])."<br />";
+					#if (intval($product['Dostavka']) != 2 || (intval($product['Qty1']) == 0 && intval($product['Qty2']) == 0 && intval($product['Qty3'] == 0))) continue;
+					//echo "-------------------<br /><pre>";
+					//print_r($product);
+					//echo "</pre>";
+					$product['CAPTION'] = $product['Name2'];
+					$product['ICODE'] = $product['Name'];
+					$product['DELIVERY'] = $product['Dostavka'];
+					$product['REGIONR'] = 'УКРАИНА';
+					
+			
+			$this->prepareSql();
+			#echo $this->sql['partColumnRegion'];
+			$sqlQuery = $DB->query($this->sql['partColumnRegion']);
+			$sqlRes = $sqlQuery->fetch_assoc();
+			$this->params['propertyColumn'] = "PROPERTY_".$sqlRes['RegionColumn'];//формируем коэффициенты для пересчета цен
+			$this->prepareSql();
+			#echo $this->sql['suppliers'];
+			$sqlQuery = $DB->query($this->sql['suppliers']);
+			$sqlRes = $sqlQuery->fetch_assoc();
+			$product['PRICEREGION'] = $sqlRes['koefPrice']*$product['Price'];
+			$product['CURRREGION'] = $sqlRes['CurrencyCode'];
+			$this->params['CURRREGION'] = $product['CURRREGION'];
+			$this->prepareSql();
+			#echo $this->sql['rate'];
+			$sqlQuery = $DB->query($this->sql['rate']);
+			$sqlRes = $sqlQuery->fetch_assoc();
+			$product['PRICEREGIONINCURRENCY'] = $product['PRICEREGION']*$sqlRes['Rate'];
+            $product['CS']="#eed5d5" ;
+            $product['REGION'] = self::$log[$this->params['client']]['region'];      
+                    break;
+                   
+         }                         
+            //$product['REGION'] = self::$log[$this->params['client']]['region'];         
+			$products[] = $product;
+                         
+	}
+		//unset($this->result);
+		$this->resultToReturn[] = $products;
+                 #echo "-------------------<br /><pre>";
+		#print_r($products);
+		#echo "</pre>";
+
+	}
+	private function prepareSql()
+	{
+		                                                                                                                                $this->sql['partColumnRegion'] = "SELECT `RegionColumn` FROM  `b_autodoc_wh_price_types_m` 
+                                                WHERE `Code`=(SELECT IF((SELECT PriceColumn_1C FROM b_user WHERE ID_1C='{$this->params['user']}' LIMIT 1)=0,10,(SELECT PriceColumn_1C FROM b_user WHERE ID_1C='{$this->params['user']}' LIMIT 1))) LIMIT 1";
+        
+        $this->sql['suppliers'] = "SELECT ".$this->params['propertyColumn']." AS koefPrice, `PROPERTY_189` AS CurrencyCode FROM `b_iblock_element_prop_s17` 
+                                                                WHERE `PROPERTY_93`='".self::$log[$this->params['client']]['region']."'";
+        $this->sql['rate'] = "SELECT ITG_currency_rate_ua('{$this->params['CURRREGION']}','{$this->params['currency']}') AS Rate";
+	    
+        $this->sql['koef']="SELECT  ITG_region_koef('4','{$this->params['user']}') AS COEF ";
+       
+    }
+}
+?>

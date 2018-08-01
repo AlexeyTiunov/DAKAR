@@ -1,0 +1,309 @@
+// buttons
+.beta-btn {color:$white;border:1px solid $border;display:inline-block;padding:6px 20px}
+.beta-btn:hover {color:$white}
+.beta-btn i.shift-left {margin-left:-5px}
+
+.beta-btn.primary {color:$color;padding:10px 20px;line-height:100%}
+.beta-btn.primary:hover {color:$white;background:$color1}
+.beta-btn.primary i {font-size:10px;padding-left:5px;color:$color4}
+
+// btn colors
+.beta-btn-white {border:none;background:$white}
+.beta-btn-asparagus {border:none;background:$asparagus}
+.beta-btn-dim {border:none;background:$dim}
+.beta-btn-dodger {border:none;background:$dodger}
+.beta-btn-denim {border:none;background:$denim}
+.beta-btn-dark-turquoise {border:none;background:$dark-turquoise}
+.beta-btn-prussian {border:none;background:$prussian}
+.beta-btn-puce {border:none;background:$puce}
+.beta-btn-rosy {border:none;background:$rosy}
+.beta-btn-mauve {border:none;background:$mauve}
+.beta-btn-mountbatten {border:none;background:$mountbatten}
+.beta-btn-medium-turquoise {border:none;background:$medium-turquoise}
+.beta-btn-medium-sea {border:none;background:$medium-sea}
+.beta-btn-light-sea {border:none;background:$light-sea}
+.beta-btn-slate {border:none;background:$slate}
+
+.beta-btn-3d.beta-btn-asparagus {border-bottom:3px solid darken($asparagus, 10%)}
+.beta-btn-3d.beta-btn-dim {border-bottom:3px solid darken($dim, 10%)}
+.beta-btn-3d.beta-btn-dodger {border-bottom:3px solid darken($dodger, 10%)}
+.beta-btn-3d.beta-btn-denim {border-bottom:3px solid darken($denim, 10%)}
+.beta-btn-3d.beta-btn-dark-turquoise {border-bottom:3px solid darken($dark-turquoise, 10%)}
+.beta-btn-3d.beta-btn-prussian {border-bottom:3px solid darken($prussian, 10%)}
+.beta-btn-3d.beta-btn-puce {border-bottom:3px solid darken($puce, 10%)}
+.beta-btn-3d.beta-btn-rosy {border-bottom:3px solid darken($rosy, 10%)}
+.beta-btn-3d.beta-btn-mauve {border-bottom:3px solid darken($mauve, 10%)}
+.beta-btn-3d.beta-btn-mountbatten {border-bottom:3px solid darken($mountbatten, 10%)}
+.beta-btn-3d.beta-btn-medium-turquoise {border-bottom:3px solid darken($medium-turquoise, 10%)}
+.beta-btn-3d.beta-btn-medium-sea {border-bottom:3px solid darken($medium-sea, 10%)}
+.beta-btn-3d.beta-btn-light-sea {border-bottom:3px solid darken($light-sea, 10%)}
+.beta-btn-3d.beta-btn-slate {border-bottom:3px solid darken($slate, 10%)}
+.beta-btn-3d {position:relative;bottom:0}
+.beta-btn-3d:active {border-bottom:0px;bottom:-3px}
+
+.beta-btn-2d:hover {opacity:0.8}// beta btn 2d
+
+.beta-btn-asparagus i,
+.beta-btn-dim i,
+.beta-btn-dodger i,
+.beta-btn-denim  i,
+.beta-btn-dark-turquoise i,
+.beta-btn-prussian i,
+.beta-btn-puce i,
+.beta-btn-rosy i,
+.beta-btn-mauve i,
+.beta-btn-mountbatten i,
+.beta-btn-medium-turquoise i,
+.beta-btn-medium-sea i,
+.beta-btn-light-sea i,
+.beta-btn-slate i {color:$white}
+
+// btn size
+.beta-btn-small {padding:8px 20px;font-size:14px}
+.beta-btn-medium {padding:10px 20px;font-size:16px}
+.beta-btn-large {padding:12px 20px;font-size:19px}
+
+
+/************************************************************************/
+
+// icons boxes
+.icon-box h5 {line-height:100%;margin-bottom:20px}
+.icon-box .pull-left {color:$icon-color;}
+ 
+ // type a
+.icon-box-a .pull-left {font-size:25px;margin-right:17px}
+
+// type b
+.icon-box-b {text-align:center}
+.icon-box-b .pull-left {float:none !important;font-size:64px;width:160px;height:160px;line-height:160px;border-radius:50%;;margin:0 auto;background-color:$white}
+.icon-box-b .media-body {background-color:$white;padding:80px 40px 40px;margin-top:-80px}
+
+// type c
+.icon-box-c {text-align:center}
+.icon-box-c .pull-left {float:none !important;font-size:64px;margin:0 auto 35px;}
+.icon-box-c .media-body {padding:0 40px 40px;}
+
+// type d
+.icon-box-d {text-align:center}
+.icon-box-d .pull-left {float:none !important;font-size:25px;margin:0 auto 30px;}
+.icon-box-d .media-body {padding:0 40px 40px;}
+.icon-box-d h5 {font-size:23px}
+
+// type e
+.icon-box-e {text-align:center}
+.icon-box-e .pull-left {float:none !important;font-size:100px;margin:0 auto 35px;}
+.icon-box-e .pull-left i {top:50%;margin-top:-50px}
+
+// type f
+.icon-box-f .icon-box-icon {width:105px;height:105px;position:relative;background-color:$white}
+.icon-box-f .icon-box-icon i {font-size:30px;color:$icon-color}
+
+// type g
+.icon-box-g {border:1px solid $bg-gray;text-align:center}
+.icon-box-g .icon-box-icon {font-size:30px;color:#cacaca;margin-bottom:20px}
+.icon-box-body {padding:50px 35px 0}
+.icon-box-caption {position:relative;background-color:$bg-gray}
+.icon-box-caption h5 {margin-bottom:0;padding:20px 0}
+
+.icon-box-g:hover .icon-box-icon {color:$color11;}
+.icon-box-g:hover .icon-box-caption {background-color:$color11;@include animate}
+.icon-box-g:hover .icon-box-caption h5 {color:$white;@include animate}
+.icon-box-g:hover .indicator-top-small {border-color: transparent transparent $color11 transparent;@include animate}
+
+/*******************************/
+
+// team
+.beta-person {background:$white}
+.beta-person-body {padding:20px 20px 25px;position:relative}
+.beta-person-body h5 {line-height:100%;margin-bottom:0px}
+
+.media-body.beta-person-body {padding-top:0px !important;}
+
+.about-person {width:170px;height:170px;display:block;position:relative}
+.about-person:hover .about-person-over {opacity:1}
+	.about-person-over {background:rgba($white, 0.7);width:100%;height:100%;position:absolute;top:0;left:0;opacity:0;@include animate}
+	.about-details {position:absolute;left:0;right:0;bottom:5px}
+	.about-details h5 {margin-bottom:0;line-height:100%}
+
+// slider
+.beta-slider {position:relative}
+.beta-arrow-left {position:absolute;left:0;z-index:10}
+.beta-arrow-right {position:absolute;right:0;z-index:10}
+.beta-arrow-left i, .beta-arrow-right i {font-size:30px;color:$slider-arrow-color}
+.bx-viewport {height:auto !important}
+
+.beta-pager {width:10px;position:absolute;top:50%;right:20px;-webkit-transform:translateY(-50%);transform:translateY(-50%);z-index:9;text-align:center}
+.beta-pager a {display:inline-block;margin-bottom:0}
+.beta-pager-item {display:block;border-radius:50%;width: 8px;height: 8px;background:$white}
+.beta-pager .active .beta-pager-item {background:rgba($white, 0.7);border:1px solid $white;width: 10px;height: 10px}
+
+.beta-pager-gallery {margin-left:-6px;margin-right:-6px;display:inline-block}
+.beta-pager-gallery a {display:inline-block;width:148px;height:110px;margin:5px;border:2px solid transparent;position:relative}
+.beta-pager-gallery a.active {border:2px solid $color4}
+.beta-pager-gallery a img {position:absolute;width:auto;height:auto;min-width:100%;min-height:100%;left:0;top:0}
+
+// our work
+.work-item {position:relative}
+.work-item:hover .work-item-over {
+	opacity:1;
+}
+.work-item-over {
+	position:absolute;width:100%;height:100%;background-color:rgba($color11, 0.8);color:$white;text-align:center;
+	opacity:0;
+	-webkit-transition:all 0.6s ease-out;
+	transition:all 0.6s ease-out;
+}
+.work-item-over:before {
+	content : "";
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 180px 320px 0 0;
+	border-color: rgba($white, 0.3) transparent transparent transparent;
+	position:absolute;top:0;left:0;
+}
+	.work-item-title {margin-top:30%}
+	.work-item-categories {text-transform:uppercase;margin-bottom:15px}
+	.work-item-actions {overflow:hidden}
+	.work-item-actions a {width:55px;height:55px;display:inline-block;background:$white;}
+	.work-item-actions a i {font-size:22px;color:$icon-light-gray;line-height:55px}
+	.work-item-actions a:hover {background:$color11;}
+	.work-item-actions a:hover i {color:$white}
+
+// accordions
+.panel-default {border-radius:0 !important;border:1px solid $border !important}
+.panel-default>.panel-heading {background:none;padding:0}
+.panel-default>.panel-heading .panel-title {font-size:18px;line-height:20px;padding:0}
+.panel-default>.panel-heading .panel-title a {padding:13px 40px 13px 15px;width:100%;height:100%;display:block;position:relative}
+.panel-default>.panel-heading .panel-title a:hover .accordion-circle {border:1px solid $color1}
+.panel-default>.panel-heading .panel-title a > i {font-size:20px;color:$icon-gray}
+.panel-default>.panel-heading .panel-title a:hover i {color:$color1;}
+
+.accordion-circle {display:block;width:30px;height:30px;border-radius:50%;border:1px solid $border;position:absolute;right:5px;top:50%;margin-top:-15px;text-align:center}
+.accordion-circle i {color:$border;line-height:30px;}
+
+.panel-default>.panel-heading.beta-active-tab {background-color:$color1;color:$white !important}
+.panel-default>.panel-heading.beta-active-tab .panel-title {color:$white !important}
+.panel-default>.panel-heading.beta-active-tab .panel-title a:hover {color:$white !important}
+.panel-default>.panel-heading.beta-active-tab .accordion-circle {border:1px solid $white !important}
+.panel-default>.panel-heading.beta-active-tab i {color:$white !important}
+
+// accordion type simple
+.panel-group.beta-accordion-b .panel-default {border:none !important;border-bottom:1px solid $border !important}
+.panel-group.beta-accordion-b .panel-default>.panel-heading.beta-active-tab,
+.panel-group.beta-accordion-b .panel-default>.panel-heading.beta-active-tab .panel-title,
+.panel-group.beta-accordion-b .panel-default>.panel-heading.beta-active-tab .accordion-circle,
+.panel-group.beta-accordion-b .panel-default>.panel-heading.beta-active-tab i
+{background:none !important;color:$color1 !important}
+.panel-group.beta-accordion-b .panel-default>.panel-heading.beta-active-tab .panel-title a:hover {color:$link-hover !important}
+
+// carousel
+.beta-roundabout-container {width:100%;height:200px;margin-top:200px;margin-bottom:50px}
+.beta-roundabout {list-style:none}
+.beta-roundabout li {width:75%;height:400px;overflow:hidden}
+.beta-roundabout li img {width:100%;height:auto}
+
+// rotator
+.circliful {position: relative; }
+.circle-text, .circle-info, .circle-text-half, .circle-info-half {width: 100%; position: absolute; text-align: center; display: inline-block;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%) }
+.circle-info, .circle-info-half {color: #999; }
+.circliful .fa {margin: -10px 3px 0 3px; position: relative; bottom: 4px; }
+
+
+// blockquote
+.beta-blockquote {padding:40px;margin:10px 0}
+
+.beta-blockquote-b {border:1px solid $border;padding-left:100px;position:relative}
+.beta-blockquote-b .quote-icon {position:absolute;top:50px;left:40px;font-size:30px;color:$icon-gray}
+
+// quote
+.beta-quote {margin-top:10px;margin-bottom:10px}
+.beta-quote-left {border-left:3px solid $color11;padding-left:20px;}
+.beta-quote-right {border-right:3px solid $color11;padding-right:20px;}
+
+// callout box *************************************************/
+.beta-callout-box {background:$callout-box-bg;}
+
+// type a
+.beta-callout-box-a .pull-left {width:270px;height:240px;line-height:240px;background-color:$callout-box-bg2;text-align:center;font-size:100px;color:$color1;}
+.beta-callout-box-a .media-body {padding:45px 25px}
+
+// type b
+.beta-callout-box-b .pull-left {font-size:100px;color:$color4;float:none!important;text-align:center}
+.beta-callout-box-b {padding:30px 100px;text-align:center}
+
+// type c
+.beta-callout-box-c {padding:65px 65px 30px}
+
+// type d
+.beta-callout-box-d {text-align:center;padding:55px 140px;color:$white}
+.beta-callout-box-d h1 {color:$white;}
+.beta-callout-box-d .beta-btn {background:$white}
+
+// testimonials ///////////////////////////////
+.beta-testimonial-body {padding:30px;border:1px solid $border;background:$bg-gray;position:relative;margin-bottom:10px}
+.beta-testimonial-triangle {position:absolute;width: 0px; height: 0px; border-style: solid; border-width: 30px 33px 0 0px; border-color: $bg-gray transparent transparent transparent;left:38px;bottom:-29px}
+
+.beta-testimonial-detail {}
+.beta-testimonial-title {font-size:20px;margin-bottom:0px}
+.beta-testimonial-position {}
+
+// for abs images testimonials
+.beta-testimonial.abs-testimonial {color:$white}
+.beta-testimonial.abs-testimonial .beta-testimonial-body {background-color:rgba($white, 0.3);border:1px solid rgba($border, 0.5);}
+.beta-testimonial.abs-testimonial .beta-testimonial-triangle {border-color: rgba($white, 0.3) transparent transparent transparent;bottom:-31px}
+
+// features
+.beta-features {background:$bg-gray;position:relative}
+.beta-features i {color:$color1;font-size:100px;text-align:center;vertical-align:middle}
+.indicator-bottom {position:absolute;bottom:-26px;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);width: 0px; height: 0px; border-style: solid; border-width: 26px 26px 0 26px; border-color: $bg-gray transparent transparent transparent; }
+.indicator-top {position:absolute;top:-26px;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);width: 0px; height: 0px; border-style: solid; border-width: 0 26px 26px 26px; border-color: transparent transparent $bg-gray transparent; }
+.indicator-top-small {position:absolute;top:-10px;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);width: 0px; height: 0px; border-style: solid; border-width: 0 10px 10px 10px; border-color: transparent transparent $bg-gray transparent; }
+
+// pricing tables
+.beta-pricing {border:1px solid $border;}
+.beta-pricing th {text-align:center}
+.beta-pricing td {text-align:center;padding:15px 0 !important}
+.beta-pricing.table>thead>tr>th {border-bottom:none}
+.beta-pricing thead {font-family:Dosis}
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {border-bottom:1px solid $border}
+.beta-pricing thead td {background-color:$bg-gray;padding:25px 0 20px !important}
+.beta-pricing thead td span.price-currency {color:$header-color;font-size:35px}
+.beta-pricing thead td span.price-amount {color:$header-color;font-size:65px;}
+tfoot {background-color:$bg-gray}
+.beta-pricing.table tfoot>tr>td {padding:30px 0 !important}
+tfoot td a {background-color:$color1;color:$white}
+tfoot td a i {color:$white}
+
+// type b
+.beta-pricing.beta-pricing-b {border-collapse:separate;border-spacing:10px 0;border:none}
+.beta-pricing.beta-pricing-b thead tr>th {border-top:1px solid $border !important}
+.beta-pricing.beta-pricing-b.table>tbody>tr>td, .beta-pricing.beta-pricing-b.table>thead>tr>td {border-bottom:none !important}
+.beta-pricing.beta-pricing-b td, .beta-pricing.beta-pricing-b th {border-left:1px solid $border;border-right:1px solid $border}
+
+.beta-pricing.beta-pricing-b th h4 {color:$white}
+.beta-pricing.beta-pricing-b th:nth-child(1) {background:$bg-price1;}
+.beta-pricing.beta-pricing-b th:nth-child(2) {background:$bg-price2;}
+.beta-pricing.beta-pricing-b th:nth-child(3) {background:$bg-price3;}
+.beta-pricing.beta-pricing-b th:nth-child(4) {background:$bg-price4;}
+
+.beta-pricing.beta-pricing-b tfoot td:nth-child(1) a {background:$bg-price1;}
+.beta-pricing.beta-pricing-b tfoot td:nth-child(2) a {background:$bg-price2;}
+.beta-pricing.beta-pricing-b tfoot td:nth-child(3) a {background:$bg-price3;}
+.beta-pricing.beta-pricing-b tfoot td:nth-child(4) a {background:$bg-price4;}
+
+// beta counter
+.beta-counter {position:relative;text-align:center}
+.beta-counter i {font-size:45px;color:$color1}
+	.beta-counter-value {font-size:40px;border-bottom:1px solid $border;line-height:75px}
+	.beta-counter-title {font-size:20px;margin-top:20px}
+
+// progress bars
+.beta-progress .progress {box-shadow:none;height:11px;border-radius:5px;margin-bottom:10px}
+.beta-progress .progress-bar {background-color:$bg-progress1;}
+.beta-progress p {margin-bottom:5px}
+
+// messages
+.beta-message {background:$color1;padding:12px 25px;color:$white}
+.beta-message i {font-size:40px;color:$white}
+.beta-message-text {line-height:40px}
